@@ -28,8 +28,8 @@ jobs:
         run: |
           python scripts/validate.py
           python scripts/audit_originais.py
-          python scripts/qa_gifs.py
           python scripts/build.py --all
+          python scripts/qa_gifs.py
       - name: Publicar GIFs no repositório
         run: |
           git config user.name "github-actions[bot]"
