@@ -189,6 +189,38 @@
       "musculos": "flexores de quadril e postura",
       "instrucoes": "Em meio-ajoelhada, leve a pelve suavemente à frente sem arquear as costas.",
       "status": "referenciado"
+    },
+    {
+      "id": "bicicleta",
+      "nome": "Abdominal bicicleta lento",
+      "slug": "bicycle-crunch",
+      "musculos": "abdômen, oblíquos e core",
+      "instrucoes": "De costas, alterne cotovelo em direção ao joelho oposto, devagar, sem puxar o pescoço. Não force se houver dor ou pressão pélvica.",
+      "status": "referenciado"
+    },
+    {
+      "id": "peitoral",
+      "nome": "Alongamento de peitoral na porta",
+      "slug": "doorway-chest-stretch",
+      "musculos": "peitoral, ombros e braços",
+      "instrucoes": "Com o antebraço apoiado no batente, dê um pequeno passo à frente até sentir alongar o peitoral, sem dor.",
+      "status": "referenciado"
+    },
+    {
+      "id": "prancha-joelhos",
+      "nome": "Prancha com joelhos apoiados",
+      "slug": null,
+      "musculos": "abdômen, ombros, braços e core",
+      "instrucoes": "Antebraços e joelhos no tapete, cotovelos abaixo dos ombros. Mantenha tronco em linha reta da cabeça aos joelhos, respirando normalmente. Aguardando ilustração técnica fiel.",
+      "status": "revisao_pendente"
+    },
+    {
+      "id": "gluteo-sentado",
+      "nome": "Alongamento de glúteos sentado",
+      "slug": null,
+      "musculos": "glúteos, quadris e lombar",
+      "instrucoes": "Sentada, cruze uma perna, aproxime delicadamente o joelho em direção ao peito e mantenha coluna longa. Aguardando ilustração fiel.",
+      "status": "revisao_pendente"
     }
   ]
 }

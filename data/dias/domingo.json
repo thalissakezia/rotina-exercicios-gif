@@ -14,9 +14,14 @@
       "dose": "30 segundos por lado"
     },
     {
-      "id": "crianca",
+      "id": "peitoral",
       "series": 1,
-      "dose": "40 segundos"
+      "dose": "30 segundos por lado"
+    },
+    {
+      "id": "gluteo-sentado",
+      "series": 1,
+      "dose": "30 segundos por lado"
     },
     {
       "id": "borboleta",

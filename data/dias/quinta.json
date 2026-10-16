@@ -9,6 +9,11 @@
       "dose": "10–12 repetições"
     },
     {
+      "id": "afundolateral",
+      "series": 3,
+      "dose": "10–12 por lado"
+    },
+    {
       "id": "ponte",
       "series": 3,
       "dose": "12–15 repetições"
@@ -19,14 +24,14 @@
       "dose": "12 por lado"
     },
     {
-      "id": "concha",
+      "id": "interna",
       "series": 3,
       "dose": "12–15 por lado"
     },
     {
-      "id": "afundolateral",
+      "id": "concha",
       "series": 2,
-      "dose": "8 por lado"
+      "dose": "12 por lado"
     }
   ]
 }

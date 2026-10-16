@@ -24,14 +24,20 @@
       "dose": "10 por lado"
     },
     {
-      "id": "concha",
+      "id": "afundolateral",
       "series": 3,
-      "dose": "12 por lado"
+      "dose": "10 por lado"
+    },
+    {
+      "id": "prancha-joelhos",
+      "series": 3,
+      "dose": "20–30 segundos"
     },
     {
       "id": "yraise",
-      "series": 3,
+      "series": 2,
       "dose": "10 repetições"
     }
-  ]
+  ],
+  "observacao": "Circuito de 3 voltas para os seis primeiros movimentos; elevação Y como complemento postural opcional."
 }

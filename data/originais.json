@@ -1,0 +1,222 @@
+{
+  "descricao": "Conferência de 33 posições de exercício contra as 7 fichas enviadas. Itens adicionais dos dias são complementos de postura ou mobilidade.",
+  "dias": {
+    "segunda": {
+      "dia": "Segunda-feira",
+      "originais": [
+        {
+          "nome": "Agachamento sumô",
+          "id": "agachamento",
+          "status": "substituido",
+          "observacao": "Agachamento sem carga preserva coxas/glúteos/core, mas reduz a ênfase específica nos adutores."
+        },
+        {
+          "nome": "Ponte de glúteos",
+          "id": "ponte",
+          "status": "mantido"
+        },
+        {
+          "nome": "Coice de glúteo",
+          "id": "coice",
+          "status": "mantido"
+        },
+        {
+          "nome": "Elevação lateral de perna",
+          "id": "lateral",
+          "status": "mantido"
+        },
+        {
+          "nome": "Elevação interna de perna",
+          "id": "interna",
+          "status": "pendente",
+          "observacao": "Sem referência rigorosamente equivalente: não publicar GIF falso."
+        }
+      ]
+    },
+    "terca": {
+      "dia": "Terça-feira",
+      "originais": [
+        {
+          "nome": "Flexão com joelhos apoiados",
+          "id": "flexao",
+          "status": "mantido"
+        },
+        {
+          "nome": "Prancha com joelhos apoiados",
+          "id": "prancha-joelhos",
+          "status": "pendente",
+          "observacao": "Isometria: fica cadastrada, mas sem GIF até haver pose ilustrada fiel."
+        },
+        {
+          "nome": "Dead bug",
+          "id": "deadbug",
+          "status": "mantido"
+        },
+        {
+          "nome": "Bird-dog",
+          "id": "birddog",
+          "status": "mantido"
+        }
+      ]
+    },
+    "quarta": {
+      "dia": "Quarta-feira",
+      "originais": [
+        {
+          "nome": "Caminhada rápida",
+          "id": "andar",
+          "status": "adaptado",
+          "observacao": "Fonte de caminhada disponível; aumentar ritmo conforme conforto, mantendo recuperação ativa."
+        },
+        {
+          "nome": "Mobilidade de ombros",
+          "id": "circulos",
+          "status": "adaptado",
+          "observacao": "Círculos de braços equivalem a parte da mobilidade, mas não cobrem todas as direções de ombro."
+        },
+        {
+          "nome": "Alongamento posterior de coxa",
+          "id": "posterior",
+          "status": "adaptado",
+          "observacao": "Feito sentado no tapete em vez da flexão de tronco em pé."
+        },
+        {
+          "nome": "Alongamento de quadril e glúteos",
+          "id": "gluteo-sentado",
+          "status": "pendente",
+          "observacao": "Alongamento sentado preservado na lista, ilustração ainda pendente."
+        }
+      ]
+    },
+    "quinta": {
+      "dia": "Quinta-feira",
+      "originais": [
+        {
+          "nome": "Agachamento",
+          "id": "agachamento",
+          "status": "mantido"
+        },
+        {
+          "nome": "Agachamento sumô",
+          "id": "afundolateral",
+          "status": "substituido",
+          "observacao": "Afundo lateral trabalha coxas/glúteos/adutores, mas tem padrão de movimento diferente."
+        },
+        {
+          "nome": "Ponte de glúteos",
+          "id": "ponte",
+          "status": "mantido"
+        },
+        {
+          "nome": "Coice de glúteo",
+          "id": "coice",
+          "status": "mantido"
+        },
+        {
+          "nome": "Elevação interna de perna",
+          "id": "interna",
+          "status": "pendente",
+          "observacao": "Adutores no tapete: falta GIF fiel; não trocar por exercício de abdutores."
+        }
+      ]
+    },
+    "sexta": {
+      "dia": "Sexta-feira",
+      "originais": [
+        {
+          "nome": "Flexão com joelhos apoiados",
+          "id": "flexao",
+          "status": "mantido"
+        },
+        {
+          "nome": "Prancha com joelhos apoiados",
+          "id": "prancha-joelhos",
+          "status": "pendente",
+          "observacao": "Falta fonte visual da versão com joelhos apoiados."
+        },
+        {
+          "nome": "Dead bug",
+          "id": "deadbug",
+          "status": "mantido"
+        },
+        {
+          "nome": "Bird-dog",
+          "id": "birddog",
+          "status": "mantido"
+        },
+        {
+          "nome": "Abdominal bicicleta lento",
+          "id": "bicicleta",
+          "status": "mantido"
+        }
+      ]
+    },
+    "sabado": {
+      "dia": "Sábado",
+      "originais": [
+        {
+          "nome": "Agachamento",
+          "id": "agachamento",
+          "status": "mantido"
+        },
+        {
+          "nome": "Flexão com joelhos apoiados",
+          "id": "flexao",
+          "status": "mantido"
+        },
+        {
+          "nome": "Ponte de glúteos",
+          "id": "ponte",
+          "status": "mantido"
+        },
+        {
+          "nome": "Bird-dog",
+          "id": "birddog",
+          "status": "mantido"
+        },
+        {
+          "nome": "Agachamento sumô",
+          "id": "afundolateral",
+          "status": "substituido",
+          "observacao": "Afundo lateral ativa coxas, glúteos e adutores, porém não é sumô."
+        },
+        {
+          "nome": "Prancha com joelhos apoiados",
+          "id": "prancha-joelhos",
+          "status": "pendente",
+          "observacao": "Manter isometria e buscar pose correta."
+        }
+      ]
+    },
+    "domingo": {
+      "dia": "Domingo",
+      "originais": [
+        {
+          "nome": "Caminhada leve",
+          "id": "andar",
+          "status": "mantido"
+        },
+        {
+          "nome": "Alongamento de braços e peitoral",
+          "id": "ombro",
+          "status": "adaptado",
+          "observacao": "Dividido em alongamento de ombros e alongamento de peitoral na porta.",
+          "extras": [
+            "peitoral"
+          ]
+        },
+        {
+          "nome": "Alongamento de glúteos",
+          "id": "gluteo-sentado",
+          "status": "pendente",
+          "observacao": "Sem sequência de referência fiel."
+        },
+        {
+          "nome": "Alongamento interno de coxas",
+          "id": "borboleta",
+          "status": "mantido"
+        }
+      ]
+    }
+  }
+}

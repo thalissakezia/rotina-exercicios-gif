@@ -1,0 +1,68 @@
+{
+  "politica": "Nunca copiar bibliotecas inteiras ou instalar modelos de IA pesados automaticamente. Verificar termos, versões, modelo e autorização antes de usar. API paga não obrigatória.",
+  "fontes": [
+    {
+      "nome": "Workout Guide",
+      "url": "https://github.com/bryllim/workout-guide",
+      "estado": "Em produção",
+      "objetivo": "Referência de 3 quadros SVG por exercício; CC BY-SA 4.0",
+      "limites": "Gerador atual; fixado em revisão; não é vídeo real nem medição biomecânica."
+    },
+    {
+      "nome": "MediaPipe",
+      "url": "https://github.com/google-ai-edge/mediapipe",
+      "estado": "Opcional",
+      "objetivo": "Pontos de pose corporal em vídeo real e checagem de movimento",
+      "limites": "Não reconhece necessariamente desenhos vetoriais; não determina técnica correta sozinho."
+    },
+    {
+      "nome": "MMPose",
+      "url": "https://github.com/open-mmlab/mmpose",
+      "estado": "Opcional",
+      "objetivo": "Estimativa de pose em vídeos e frames reais, incluindo 2D/3D conforme modelo",
+      "limites": "Modelos e datasets possuem licenças específicas; requer recursos computacionais extras."
+    },
+    {
+      "nome": "FreeMoCap",
+      "url": "https://github.com/freemocap/freemocap",
+      "estado": "Opcional",
+      "objetivo": "Captura de movimento de pessoas usando câmeras",
+      "limites": "Ferramenta de referência 3D; configuração trabalhosa, sem dados gravados não gera anatomia confiável."
+    },
+    {
+      "nome": "FreeMoCap Blender Addon",
+      "url": "https://github.com/freemocap/freemocap_blender_addon",
+      "estado": "Opcional",
+      "objetivo": "Transferir captura de movimento para Blender",
+      "limites": "Verificar compatibilidade e licença; Blender depende de rigging e materiais."
+    },
+    {
+      "nome": "Pose2Sim",
+      "url": "https://github.com/perfanalytics/pose2sim",
+      "estado": "Opcional",
+      "objetivo": "Reconstrução biomecânica 3D a partir de vídeo multimodal",
+      "limites": "Exige vídeos adequados e calibração; não funciona por adivinhação em GIF."
+    },
+    {
+      "nome": "OpenSim",
+      "url": "https://github.com/opensim-org/opensim-core",
+      "estado": "Opcional avançado",
+      "objetivo": "Modelo musculoesquelético e avaliação de movimento",
+      "limites": "Precisa de dados e modelagem, não cria GIF automático."
+    },
+    {
+      "nome": "Blender",
+      "url": "https://github.com/blender/blender",
+      "estado": "Opcional",
+      "objetivo": "Rigging 3D, poses controladas, renderização consistente",
+      "limites": "Fluxo de qualidade futura: não é dependência necessária para imagens atuais."
+    },
+    {
+      "nome": "Free Exercise DB",
+      "url": "https://github.com/yuhonas/free-exercise-db",
+      "estado": "Consulta, não importação",
+      "objetivo": "Comparação de instruções e músculos em base pública JSON",
+      "limites": "Fotos de 2 posições; não converter automaticamente em GIF biomecanicamente validado."
+    }
+  ]
+}

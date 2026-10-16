@@ -6,7 +6,7 @@
     {
       "id": "andar",
       "series": 1,
-      "dose": "20–30 minutos"
+      "dose": "20–30 minutos, ritmo confortável a rápido"
     },
     {
       "id": "circulos",
@@ -14,14 +14,19 @@
       "dose": "40 segundos"
     },
     {
-      "id": "rotacao",
+      "id": "posterior",
       "series": 1,
-      "dose": "40 segundos"
+      "dose": "30 segundos por lado"
+    },
+    {
+      "id": "gluteo-sentado",
+      "series": 1,
+      "dose": "30 segundos por lado"
     },
     {
       "id": "gatovaca",
       "series": 1,
-      "dose": "60 segundos"
+      "dose": "40 segundos"
     },
     {
       "id": "crianca",

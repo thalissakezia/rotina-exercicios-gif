@@ -27,6 +27,7 @@ jobs:
       - name: Validar e produzir os sete dias
         run: |
           python scripts/validate.py
+          python scripts/audit_originais.py
           python scripts/build.py --all
       - name: Publicar GIFs no repositório
         run: |

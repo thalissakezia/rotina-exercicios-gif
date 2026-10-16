@@ -9,6 +9,11 @@
       "dose": "8–12 repetições"
     },
     {
+      "id": "prancha-joelhos",
+      "series": 3,
+      "dose": "20–30 segundos"
+    },
+    {
       "id": "deadbug",
       "series": 3,
       "dose": "10 por lado"
@@ -19,12 +24,12 @@
       "dose": "10 por lado"
     },
     {
-      "id": "traise",
+      "id": "bicicleta",
       "series": 2,
-      "dose": "10 repetições"
+      "dose": "10 por lado"
     },
     {
-      "id": "anjoneve",
+      "id": "traise",
       "series": 2,
       "dose": "10 repetições"
     }
