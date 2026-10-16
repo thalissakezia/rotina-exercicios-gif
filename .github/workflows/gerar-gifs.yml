@@ -28,12 +28,13 @@ jobs:
         run: |
           python scripts/validate.py
           python scripts/audit_originais.py
+          python scripts/qa_gifs.py
           python scripts/build.py --all
       - name: Publicar GIFs no repositório
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add output/
+          git add -A output/
           if ! git diff --cached --quiet; then
             git commit -m "build: atualizar GIFs animados da semana"
             git push

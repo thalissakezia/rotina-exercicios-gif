@@ -11,7 +11,7 @@ Cada exercício traz nome, explicação, músculos trabalhados, séries/repetiç
 - data/dias: um JSON separado para cada dia
 - scripts/build.py: produz cartões e animações sem API paga
 - output/daily: GIFs completos por dia (gerados pelo GitHub Actions)
-- output/gifs: GIFs individuais
+- output/gifs: GIFs individuais organizados por dia (ex.: `output/gifs/segunda/ponte.gif`)
 - output/semana.html: painel semanal
 
 ## Fidelidade e limitações
@@ -45,3 +45,9 @@ A automação GitHub Actions gera novamente em cada alteração da base.
 - [Painel de toda a semana](output/semana.html)
 
 O painel HTML precisa ser aberto com os GIFs na pasta ao lado. O pacote completo também aparece nos artefatos do GitHub Actions.
+
+## Controle automático de qualidade
+
+`python scripts/audit_originais.py` confere as 33 posições das fichas originais. `python scripts/qa_gifs.py` verifica se os sete GIFs diários e os GIFs individuais de exercícios referenciados existem, abrem corretamente, têm mais de um quadro e mantêm dimensões válidas. Esses testes **não validam a biomecânica**; o arquivo `output/quality_report.json` sinaliza pendências para revisão.
+
+[Ferramentas complementares de análise do movimento](docs/QUALIDADE-DO-MOVIMENTO.md) · [Auditoria dos exercícios originais](docs/AUDITORIA-ORIGINAIS.md)

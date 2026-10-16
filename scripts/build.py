@@ -140,9 +140,9 @@ def build_day(day):
     for idx,item in enumerate(spec["exercicios"]):
         ex=INDEX[item["id"]]
         if ex["status"]!="referenciado" or not get_poses(ex):continue
-        path=OUT/"gifs"/(item["id"]+".gif")
-        if item["id"] in PROCESSED:continue
-        PROCESSED.add(item["id"])
+        path=OUT/"gifs"/day/(item["id"]+".gif")
+        if day+"/"+item["id"] in PROCESSED:continue
+        PROCESSED.add(day+"/"+item["id"])
         store_gif([card(ex,item["series"],item["dose"],pose,idx) for pose in ANIM],path)
     return spec
 
