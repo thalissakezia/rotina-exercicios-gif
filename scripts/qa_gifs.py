@@ -36,8 +36,10 @@ for day in DAYS:
     items=json.loads((ROOT/"data/dias"/(day+".json")).read_text(encoding="utf-8"))["exercicios"]
     for it in items:
         ex=index[it["id"]]
-        if ex["status"]=="referenciado":
+        if ex["status"] in ("referenciado","procedural_review"):
             inspect(OUT/"gifs"/day/(it["id"]+".gif"),day+"/"+it["id"])
+            if ex["status"]=="procedural_review":
+                report["pendencias"].append({"dia":day,"id":it["id"],"nome":ex["nome"],"motivo":"GIF esquemático produzido; ainda precisa de revisão humana de execução"})
         else:
             report["pendencias"].append({"dia":day,"id":it["id"],"nome":ex["nome"],"motivo":"sem referência visual exata; GIF individual não produzido"})
 report["erros"]=errors

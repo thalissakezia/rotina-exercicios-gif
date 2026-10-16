@@ -13,8 +13,9 @@ def validate():
     assert len(index)==len(entries), "ID repetido no catálogo"
     for e in entries:
         assert e["nome"] and e["instrucoes"] and e["musculos"]
-        assert e["status"] in ("referenciado","revisao_pendente")
+        assert e["status"] in ("referenciado","revisao_pendente","procedural_review")
         assert (e["slug"] is not None)==(e["status"]=="referenciado")
+        if e["status"]=="procedural_review":assert e.get("reference_url") and e.get("drawing_kind")==e["id"]
     for day in DAYS:
         d=json.loads((ROOT/"data/dias"/(day+".json")).read_text(encoding="utf-8"))
         assert d["dia"]==day and d["exercicios"]
@@ -25,7 +26,7 @@ def validate():
             assert item["series"]>=1 and item["dose"]
             seen.add(item["id"])
     print("OK: "+str(len(entries))+" exercícios; 7 dias.")
-    print("Referências pendentes: "+", ".join(e["nome"] for e in entries if e["status"]!="referenciado"))
+    print("Referências pendentes: "+", ".join(e["nome"] for e in entries if e["status"]=="revisao_pendente"))
 
 if __name__=="__main__":
     validate()

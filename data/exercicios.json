@@ -44,7 +44,10 @@
       "slug": null,
       "musculos": "adutores e core",
       "instrucoes": "De lado, perna de cima dobrada à frente; eleve a perna de baixo estendida. Pendente GIF técnico.",
-      "status": "revisao_pendente"
+      "status": "procedural_review",
+      "reference_url": "https://www.acefitness.org/resources/everyone/exercise-library/39/side-lying-hip-adduction/",
+      "quality": "demonstração geométrica baseada em instrução técnica; revisar antes de uso como guia certificado",
+      "drawing_kind": "interna"
     },
     {
       "id": "flexao",
@@ -212,7 +215,10 @@
       "slug": null,
       "musculos": "abdômen, ombros, braços e core",
       "instrucoes": "Antebraços e joelhos no tapete, cotovelos abaixo dos ombros. Mantenha tronco em linha reta da cabeça aos joelhos, respirando normalmente. Aguardando ilustração técnica fiel.",
-      "status": "revisao_pendente"
+      "status": "procedural_review",
+      "reference_url": "https://www.health.harvard.edu/healthy-aging-and-longevity/try-this-move-for-better-core-strength",
+      "quality": "demonstração geométrica baseada em instrução técnica; revisar antes de uso como guia certificado",
+      "drawing_kind": "prancha-joelhos"
     },
     {
       "id": "gluteo-sentado",
@@ -220,7 +226,10 @@
       "slug": null,
       "musculos": "glúteos, quadris e lombar",
       "instrucoes": "Sentada, cruze uma perna, aproxime delicadamente o joelho em direção ao peito e mantenha coluna longa. Aguardando ilustração fiel.",
-      "status": "revisao_pendente"
+      "status": "procedural_review",
+      "reference_url": "https://www.cuh.nhs.uk/patient-information/stretches-for-the-hip/",
+      "quality": "demonstração geométrica baseada em instrução técnica; revisar antes de uso como guia certificado",
+      "drawing_kind": "gluteo-sentado"
     }
   ]
 }

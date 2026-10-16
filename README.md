@@ -51,3 +51,7 @@ O painel HTML precisa ser aberto com os GIFs na pasta ao lado. O pacote completo
 `python scripts/audit_originais.py` confere as 33 posições das fichas originais. `python scripts/qa_gifs.py` verifica se os sete GIFs diários e os GIFs individuais de exercícios referenciados existem, abrem corretamente, têm mais de um quadro e mantêm dimensões válidas. Esses testes **não validam a biomecânica**; o arquivo `output/quality_report.json` sinaliza pendências para revisão.
 
 [Ferramentas complementares de análise do movimento](docs/QUALIDADE-DO-MOVIMENTO.md) · [Auditoria dos exercícios originais](docs/AUDITORIA-ORIGINAIS.md)
+
+## Demonstrações geométricas para os movimentos restantes
+
+Adicionamos `scripts/procedural.py`: desenho geométrico determinístico de três variações sem SVG correspondente no Workout Guide. Todos os exercícios possuem agora ficha e arquivo GIF, mas essas três demonstrações estão rotuladas **revisão técnica pendente**. A prancha com joelhos é isométrica: não inventamos repetição, só variamos o indicador de respiração. As referências científicas estão em `docs/QUALIDADE-DO-MOVIMENTO.md`. Os GIFs esquemáticos não são certificados.

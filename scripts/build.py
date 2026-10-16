@@ -11,6 +11,7 @@ import math
 import urllib.request
 from pathlib import Path
 import cairosvg
+from procedural import build as build_procedural
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -47,6 +48,8 @@ def wrapped(draw,txt,x,y,limit,f,color=NAVY,lines=2,spacing=1.25):
     return y
 
 def get_poses(ex):
+    if ex["status"]=="procedural_review":
+        return build_procedural(ex["id"])
     if ex["status"]!="referenciado":return []
     slug=ex["slug"]
     if slug in CACHE:return CACHE[slug]
@@ -107,6 +110,8 @@ def card(ex,series,dose,pose,number):
         wrapped(d,"REFERÊNCIA TÉCNICA PENDENTE",193,220,415,font(22,True),PINK,2)
         wrapped(d,"GIF suspenso para não ensinar movimento incorreto.",194,294,408,font(17),lines=2)
     d=ImageDraw.Draw(im)
+    if ex["status"]=="procedural_review":
+        d.text((215,403),"Ilustração geométrica • revisão técnica",font=font(11),fill=PINK)
     wrapped(d,ex["instrucoes"],27,422,596,font(17),lines=2)
     d.rounded_rectangle((20,474,630,512),radius=12,fill="#ffffff")
     d.text((33,483),str(series)+(" série" if series==1 else " séries")+"  |  "+dose,font=font(19,True),fill=NAVY)
@@ -139,7 +144,7 @@ def build_day(day):
     print("Dia gerado:",day,len(spec["exercicios"]),"exercícios")
     for idx,item in enumerate(spec["exercicios"]):
         ex=INDEX[item["id"]]
-        if ex["status"]!="referenciado" or not get_poses(ex):continue
+        if ex["status"] not in ("referenciado","procedural_review") or not get_poses(ex):continue
         path=OUT/"gifs"/day/(item["id"]+".gif")
         if day+"/"+item["id"] in PROCESSED:continue
         PROCESSED.add(day+"/"+item["id"])

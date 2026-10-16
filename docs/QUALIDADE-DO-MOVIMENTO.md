@@ -23,3 +23,15 @@ Veja `data/fontes_tecnicas.json`. MediaPipe, MMPose e Pose2Sim são para extrair
 
 ## Custos e segurança
 Nenhuma chave OpenAI é necessária no modo atual. ChatGPT Plus não disponibiliza créditos nem uma chave gratuita para a API. Se um dia optar por pagar uso da API, crie a chave em `https://platform.openai.com/api-keys` e guarde-a em **GitHub → repositório → Settings → Secrets and variables → Actions → New repository secret**, nome `OPENAI_API_KEY`. Nunca em arquivo ou pasta do repositório, ainda que privada. NÃO ativar chamadas pagas na automação sem solicitação expressa.
+
+
+## Três demonstrações geométricas experimentais
+
+As animações de `interna`, `prancha-joelhos` e `gluteo-sentado` são desenhos **originais de código**, não imagens copiadas do ACE, NHS ou Harvard. O movimento é limitado por pontos 2D definidos manualmente. Em adução, move-se a perna inferior e a superior mantém-se dobrada; na prancha, a figura permanece imóvel e somente o ícone de respiração muda; no alongamento sentado, o tronco permanece ereto e o joelho se aproxima discretamente do peito. As representações não identificam toda a anatomia em 3D nem garantem que uma pessoa deva executar a mesma amplitude.
+
+Fontes **apenas para instrução técnica** (imagens/fotografias das fontes não foram copiadas):
+- Adutores: https://www.acefitness.org/resources/everyone/exercise-library/39/side-lying-hip-adduction/
+- Prancha de joelhos: https://www.health.harvard.edu/healthy-aging-and-longevity/try-this-move-for-better-core-strength
+- Glúteos sentado: https://www.cuh.nhs.uk/patient-information/stretches-for-the-hip/
+
+**Estado:** demonstrações geradas automaticamente e verificadas quanto a frames/arquivos; a aprovação biomecânica permanece pendente.

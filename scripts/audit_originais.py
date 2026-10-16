@@ -20,6 +20,6 @@ for day,count in expected_count.items():
         assert original["id"] in lookup, f"Sem cadastro: {original['id']}"
         assert original["status"] in allowed
         if original["status"]!="mantido":assert original.get("observacao"),f"Justificativa faltando: {day}/{original['nome']}"
-        if original["status"]=="pendente":assert lookup[original["id"]]["status"]=="revisao_pendente",f"Pendente sem bloqueio: {original['id']}"
+        if original["status"]=="pendente":assert lookup[original["id"]]["status"] in ("revisao_pendente","procedural_review"),f"Pendente sem bloqueio: {original['id']}"
         for extra in original.get("extras",[]):assert extra in ids,f"Faltou parte do exercício combinado: {day}/{extra}"
 print(f"OK: {num} exercícios originais rastreados, nenhum perdido sem substituição/pendência documentada.")
