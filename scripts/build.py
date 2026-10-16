@@ -111,8 +111,10 @@ def card(ex,series,dose,pose,number):
         wrapped(d,"GIF suspenso para não ensinar movimento incorreto.",194,294,408,font(17),lines=2)
     d=ImageDraw.Draw(im)
     if ex["status"]=="procedural_review":
-        d.text((215,403),"Ilustração geométrica • revisão técnica",font=font(11),fill=PINK)
-    wrapped(d,ex["instrucoes"],27,422,596,font(17),lines=2)
+        d.text((215,392),"Ilustração geométrica • revisão técnica",font=font(11),fill=PINK)
+        wrapped(d,ex["instrucoes"],27,412,596,font(15),lines=3)
+    else:
+        wrapped(d,ex["instrucoes"],27,422,596,font(17),lines=2)
     d.rounded_rectangle((20,474,630,512),radius=12,fill="#ffffff")
     d.text((33,483),str(series)+(" série" if series==1 else " séries")+"  |  "+dose,font=font(19,True),fill=NAVY)
     d.text((490,499),"CC BY-SA",font=font(9),fill="#64718a")
