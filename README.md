@@ -30,3 +30,18 @@ Consulte docs/REFERENCIAS.md.
 ## Como gerar
 Python 3.11; pip install -r requirements.txt; python scripts/validate.py; python scripts/build.py
 A automação GitHub Actions gera novamente em cada alteração da base.
+
+## Abrir os arquivos animados
+
+- [Segunda-feira](output/daily/segunda.gif)
+- [Terça-feira](output/daily/terca.gif)
+- [Quarta-feira](output/daily/quarta.gif)
+- [Quinta-feira](output/daily/quinta.gif)
+- [Sexta-feira](output/daily/sexta.gif)
+- [Sábado](output/daily/sabado.gif)
+- [Domingo](output/daily/domingo.gif)
+
+- [GIFs individuais](output/gifs/)
+- [Painel de toda a semana](output/semana.html)
+
+O painel HTML precisa ser aberto com os GIFs na pasta ao lado. O pacote completo também aparece nos artefatos do GitHub Actions.

@@ -100,8 +100,8 @@ def card(ex,series,dose,pose,number):
     diagram(d,21,158,ex["musculos"].split(","))
     poses=get_poses(ex)
     if poses:
-        art=poses[pose]
-        im.paste(art,(225,122),art)
+        art=poses[pose].resize((285,285),Image.Resampling.LANCZOS)
+        im.paste(art,(230,128),art)
     else:
         d.rounded_rectangle((175,163,625,379),radius=15,fill="#fff7f7")
         wrapped(d,"REFERÊNCIA TÉCNICA PENDENTE",193,220,415,font(22,True),PINK,2)

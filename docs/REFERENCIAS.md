@@ -10,3 +10,5 @@ Três poses não garantem técnica correta, segurança individual ou continuidad
 Movimentos sem fonte exata devem ficar marcados para revisão, nunca substituídos por outro com músculos diferentes.
 Para fortalecimento dos adutores sem aparelhos, elevação interna de perna aguarda fonte confiável.
 Revisão por profissional de Educação Física ou fisioterapeuta é recomendada antes de uso como material técnico.
+
+Adaptação do projeto: os traços originalmente brancos dos SVGs são recoloridos em azul-marinho para contraste nas fichas claras; cartões e diagrama de músculos são criação deste projeto.
