@@ -1,0 +1,37 @@
+{
+  "dia": "domingo",
+  "objetivo": "Alongamento e recuperação",
+  "descanso_segundos": 45,
+  "exercicios": [
+    {
+      "id": "andar",
+      "series": 1,
+      "dose": "20–30 minutos"
+    },
+    {
+      "id": "ombro",
+      "series": 1,
+      "dose": "30 segundos por lado"
+    },
+    {
+      "id": "crianca",
+      "series": 1,
+      "dose": "40 segundos"
+    },
+    {
+      "id": "borboleta",
+      "series": 1,
+      "dose": "30 segundos"
+    },
+    {
+      "id": "posterior",
+      "series": 1,
+      "dose": "30 segundos"
+    },
+    {
+      "id": "quadril",
+      "series": 1,
+      "dose": "30 segundos por lado"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "dia": "quinta",
+  "objetivo": "Glúteos e pernas",
+  "descanso_segundos": 45,
+  "exercicios": [
+    {
+      "id": "agachamento",
+      "series": 3,
+      "dose": "10–12 repetições"
+    },
+    {
+      "id": "ponte",
+      "series": 3,
+      "dose": "12–15 repetições"
+    },
+    {
+      "id": "coice",
+      "series": 3,
+      "dose": "12 por lado"
+    },
+    {
+      "id": "concha",
+      "series": 3,
+      "dose": "12–15 por lado"
+    },
+    {
+      "id": "afundolateral",
+      "series": 2,
+      "dose": "8 por lado"
+    }
+  ]
+}

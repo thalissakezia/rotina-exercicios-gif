@@ -1,0 +1,37 @@
+{
+  "dia": "sabado",
+  "objetivo": "Circuito de corpo inteiro",
+  "descanso_segundos": 45,
+  "exercicios": [
+    {
+      "id": "agachamento",
+      "series": 3,
+      "dose": "12 repetições"
+    },
+    {
+      "id": "flexao",
+      "series": 3,
+      "dose": "8 repetições"
+    },
+    {
+      "id": "ponte",
+      "series": 3,
+      "dose": "15 repetições"
+    },
+    {
+      "id": "birddog",
+      "series": 3,
+      "dose": "10 por lado"
+    },
+    {
+      "id": "concha",
+      "series": 3,
+      "dose": "12 por lado"
+    },
+    {
+      "id": "yraise",
+      "series": 3,
+      "dose": "10 repetições"
+    }
+  ]
+}

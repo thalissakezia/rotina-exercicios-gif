@@ -1,0 +1,32 @@
+{
+  "dia": "segunda",
+  "objetivo": "Glúteos e coxas",
+  "descanso_segundos": 45,
+  "exercicios": [
+    {
+      "id": "agachamento",
+      "series": 3,
+      "dose": "10–12 repetições"
+    },
+    {
+      "id": "ponte",
+      "series": 3,
+      "dose": "12–15 repetições"
+    },
+    {
+      "id": "coice",
+      "series": 3,
+      "dose": "12 por lado"
+    },
+    {
+      "id": "lateral",
+      "series": 3,
+      "dose": "12–15 por lado"
+    },
+    {
+      "id": "interna",
+      "series": 3,
+      "dose": "12–15 por lado"
+    }
+  ]
+}

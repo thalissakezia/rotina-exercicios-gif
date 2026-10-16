@@ -1,0 +1,32 @@
+{
+  "dia": "sexta",
+  "objetivo": "Braços, core e postura",
+  "descanso_segundos": 45,
+  "exercicios": [
+    {
+      "id": "flexao",
+      "series": 3,
+      "dose": "8–12 repetições"
+    },
+    {
+      "id": "deadbug",
+      "series": 3,
+      "dose": "10 por lado"
+    },
+    {
+      "id": "birddog",
+      "series": 3,
+      "dose": "10 por lado"
+    },
+    {
+      "id": "traise",
+      "series": 2,
+      "dose": "10 repetições"
+    },
+    {
+      "id": "anjoneve",
+      "series": 2,
+      "dose": "10 repetições"
+    }
+  ]
+}

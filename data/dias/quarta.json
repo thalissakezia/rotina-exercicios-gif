@@ -1,0 +1,32 @@
+{
+  "dia": "quarta",
+  "objetivo": "Recuperação ativa e mobilidade",
+  "descanso_segundos": 45,
+  "exercicios": [
+    {
+      "id": "andar",
+      "series": 1,
+      "dose": "20–30 minutos"
+    },
+    {
+      "id": "circulos",
+      "series": 1,
+      "dose": "40 segundos"
+    },
+    {
+      "id": "rotacao",
+      "series": 1,
+      "dose": "40 segundos"
+    },
+    {
+      "id": "gatovaca",
+      "series": 1,
+      "dose": "60 segundos"
+    },
+    {
+      "id": "crianca",
+      "series": 1,
+      "dose": "40 segundos"
+    }
+  ]
+}

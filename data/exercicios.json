@@ -1,0 +1,194 @@
+{
+  "fonte": {
+    "repo": "bryllim/workout-guide",
+    "revision": "aac599224bb9780305239607ef98540b7e0ce389",
+    "url": "https://github.com/bryllim/workout-guide",
+    "assets_license": "CC BY-SA 4.0"
+  },
+  "exercicios": [
+    {
+      "id": "agachamento",
+      "nome": "Agachamento no tapete",
+      "slug": "bodyweight-squat",
+      "musculos": "coxas, glúteos e core",
+      "instrucoes": "Afaste os pés na largura dos ombros e agache sem deixar os joelhos colapsarem para dentro.",
+      "status": "referenciado"
+    },
+    {
+      "id": "ponte",
+      "nome": "Ponte de glúteos",
+      "slug": "glute-bridge",
+      "musculos": "glúteos, posteriores da coxa e core",
+      "instrucoes": "Deite de costas, dobre os joelhos e eleve o quadril mantendo as costelas alinhadas.",
+      "status": "referenciado"
+    },
+    {
+      "id": "coice",
+      "nome": "Coice de glúteo",
+      "slug": "donkey-kick",
+      "musculos": "glúteos, posteriores da coxa e core",
+      "instrucoes": "Em quatro apoios, estenda uma perna para trás sem girar o quadril ou arquear a lombar.",
+      "status": "referenciado"
+    },
+    {
+      "id": "lateral",
+      "nome": "Elevação lateral de perna",
+      "slug": "side-lying-leg-raise",
+      "musculos": "glúteos, abdutores e core",
+      "instrucoes": "Deite de lado e eleve a perna de cima com a pelve estável.",
+      "status": "referenciado"
+    },
+    {
+      "id": "interna",
+      "nome": "Elevação interna de perna",
+      "slug": null,
+      "musculos": "adutores e core",
+      "instrucoes": "De lado, perna de cima dobrada à frente; eleve a perna de baixo estendida. Pendente GIF técnico.",
+      "status": "revisao_pendente"
+    },
+    {
+      "id": "flexao",
+      "nome": "Flexão com joelhos apoiados",
+      "slug": "knee-push-up",
+      "musculos": "peitoral, tríceps, ombros e core",
+      "instrucoes": "Com os joelhos no tapete, flexione os cotovelos mantendo a linha entre cabeça e joelhos.",
+      "status": "referenciado"
+    },
+    {
+      "id": "deadbug",
+      "nome": "Dead bug",
+      "slug": "dead-bug",
+      "musculos": "abdômen, core e estabilidade",
+      "instrucoes": "Deite de costas e estenda braço e perna opostos sem perder o alinhamento lombar.",
+      "status": "referenciado"
+    },
+    {
+      "id": "birddog",
+      "nome": "Bird-dog",
+      "slug": "bird-dog",
+      "musculos": "core, glúteos, lombar e ombros",
+      "instrucoes": "Em quatro apoios, estenda braço e perna opostos e evite rodar a pelve.",
+      "status": "referenciado"
+    },
+    {
+      "id": "yraise",
+      "nome": "Elevação Y deitada",
+      "slug": "prone-y-raise",
+      "musculos": "costas superiores, ombros e postura",
+      "instrucoes": "De barriga para baixo, eleve braços em Y sem tensão no pescoço.",
+      "status": "referenciado"
+    },
+    {
+      "id": "traise",
+      "nome": "Elevação T deitada",
+      "slug": "prone-t-raise",
+      "musculos": "costas superiores, ombros e postura",
+      "instrucoes": "De barriga para baixo, braços em T; eleve discretamente e una as escápulas.",
+      "status": "referenciado"
+    },
+    {
+      "id": "scappush",
+      "nome": "Flexão escapular",
+      "slug": "scapular-push-up",
+      "musculos": "escápulas, ombros e core",
+      "instrucoes": "Com os braços estendidos, aproxime e afaste as escápulas controladamente.",
+      "status": "referenciado"
+    },
+    {
+      "id": "circulos",
+      "nome": "Círculos de braços",
+      "slug": "arm-circles",
+      "musculos": "ombros e costas superiores",
+      "instrucoes": "Com braços estendidos, faça círculos pequenos nos dois sentidos.",
+      "status": "referenciado"
+    },
+    {
+      "id": "gatovaca",
+      "nome": "Gato-vaca",
+      "slug": "cat-cow-stretch",
+      "musculos": "coluna e mobilidade",
+      "instrucoes": "Em quatro apoios, alterne o arqueamento suave da coluna com a respiração.",
+      "status": "referenciado"
+    },
+    {
+      "id": "rotacao",
+      "nome": "Rotação suave de tronco",
+      "slug": "torso-twist-stretch",
+      "musculos": "core e mobilidade",
+      "instrucoes": "Rode o tronco suavemente sem forçar a lombar.",
+      "status": "referenciado"
+    },
+    {
+      "id": "crianca",
+      "nome": "Postura da criança",
+      "slug": "childs-pose",
+      "musculos": "costas, quadril e mobilidade",
+      "instrucoes": "Sente o quadril em direção aos calcanhares e estenda os braços à frente.",
+      "status": "referenciado"
+    },
+    {
+      "id": "andar",
+      "nome": "Caminhada leve",
+      "slug": "walking",
+      "musculos": "pernas, glúteos e condicionamento",
+      "instrucoes": "Caminhe com postura ereta em ritmo confortável.",
+      "status": "referenciado"
+    },
+    {
+      "id": "concha",
+      "nome": "Concha lateral",
+      "slug": "clamshell",
+      "musculos": "glúteos e abdutores",
+      "instrucoes": "De lado com joelhos dobrados, abra o joelho de cima sem girar a pelve.",
+      "status": "referenciado"
+    },
+    {
+      "id": "afundolateral",
+      "nome": "Afundo lateral",
+      "slug": "lateral-lunge",
+      "musculos": "glúteos, coxas e adutores",
+      "instrucoes": "Dê um passo lateral e flexione o joelho de apoio mantendo a perna oposta estendida.",
+      "status": "referenciado"
+    },
+    {
+      "id": "anjoneve",
+      "nome": "Anjo da neve reverso",
+      "slug": "reverse-snow-angel",
+      "musculos": "costas superiores, ombros e postura",
+      "instrucoes": "De barriga para baixo, mova os braços em arco sem arquear a lombar.",
+      "status": "referenciado"
+    },
+    {
+      "id": "posterior",
+      "nome": "Alongamento posterior de coxa",
+      "slug": "seated-forward-fold-stretch",
+      "musculos": "posteriores de coxa e mobilidade",
+      "instrucoes": "Sentada, incline o tronco suavemente sem puxões.",
+      "status": "referenciado"
+    },
+    {
+      "id": "ombro",
+      "nome": "Alongamento de ombros",
+      "slug": "cross-body-shoulder-stretch",
+      "musculos": "ombros e braços",
+      "instrucoes": "Cruze um braço à frente do peito, segure suavemente e troque o lado.",
+      "status": "referenciado"
+    },
+    {
+      "id": "borboleta",
+      "nome": "Borboleta",
+      "slug": "butterfly-stretch",
+      "musculos": "adutores e quadris",
+      "instrucoes": "Sentada, una as solas dos pés e deixe os joelhos abrirem sem forçar.",
+      "status": "referenciado"
+    },
+    {
+      "id": "quadril",
+      "nome": "Alongamento de flexores do quadril",
+      "slug": "kneeling-hip-flexor-stretch",
+      "musculos": "flexores de quadril e postura",
+      "instrucoes": "Em meio-ajoelhada, leve a pelve suavemente à frente sem arquear as costas.",
+      "status": "referenciado"
+    }
+  ]
+}
