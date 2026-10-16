@@ -65,7 +65,7 @@ def inner_thigh(step):
     head(d,(79,195),19)
     d.ellipse((53,190,60,199),fill="#493448")
     arrow(d,305,220-lift)
-    d.text((172,308),"Sobe a perna DE BAIXO",fill=INK)
+    d.text((167,294),"Sobe a perna DE BAIXO",fill=INK)
     return im
 
 def kneeling_plank(step):
@@ -73,13 +73,14 @@ def kneeling_plank(step):
     d=ImageDraw.Draw(im)
     mat(d,255)
     # Linha corporal constante da cabeça aos JOELHOS, sem movimento de rep.
-    shoulder=(124,154)
-    hip=(222,190)
-    knee=(302,222)
+    shoulder=PLANK_POINTS["shoulder"]
+    hip=PLANK_POINTS["hip"]
+    knee=PLANK_POINTS["knee"]
     stroke(d,hip,knee,LEGGING,24)
     stroke(d,shoulder,hip,PINK,28)
-    stroke(d,knee,(326,244),LEGGING,14)
-    stroke(d,(326,244),(331,245),SHOE,9)
+    # Joelho apoia diretamente no tapete. Canela/pé permanecem atrás.
+    stroke(d,knee,(316,217),LEGGING,14)
+    stroke(d,(316,217),(330,220),SHOE,9)
     # cotovelo sob ombro; antebraço apoiado no tapete
     stroke(d,shoulder,(124,241),SKIN,14)
     stroke(d,(124,241),(180,244),SKIN,12)
@@ -89,7 +90,7 @@ def kneeling_plank(step):
     xx=(175,222,236)[step]
     d.ellipse((xx-5,118,xx+5,128),fill="#3a9cc1")
     d.text((144,98),"Respire",fill=INK)
-    d.text((147,305),"ISOMETRIA: corpo imóvel",fill=INK)
+    d.text((147,291),"JOELHO APOIADO: isometria",fill=INK)
     return im
 
 def seated_glute(step):
@@ -113,8 +114,13 @@ def seated_glute(step):
     stroke(d,(183-delta,202-delta),(198-delta,208-delta),SKIN,11)
     stroke(d,(117,174),(168-delta,211-delta),SKIN,12)
     stroke(d,(168-delta,211-delta),(197-delta,208-delta),SKIN,11)
-    d.text((153,305),"Joelho ao peito, sem forçar",fill=INK)
+    d.text((153,292),"Joelho ao peito, sem forçar",fill=INK)
     return im
+
+# Pontos explicitados permitem testes sem interpretação por IA.
+PLANK_POINTS={"shoulder":(124,154),"hip":(218,205),"knee":(296,246),"mat_top":255}
+INNER_LOWER_ANKLES=[(306,264),(306,253),(306,240)]
+SEATED_TORSO={"hip":(131,249),"shoulder":(134,166)}
 
 BUILDERS={"interna":inner_thigh,"prancha-joelhos":kneeling_plank,"gluteo-sentado":seated_glute}
 

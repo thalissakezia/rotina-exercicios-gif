@@ -35,3 +35,5 @@ Fontes **apenas para instrução técnica** (imagens/fotografias das fontes não
 - Glúteos sentado: https://www.cuh.nhs.uk/patient-information/stretches-for-the-hip/
 
 **Estado:** demonstrações geradas automaticamente e verificadas quanto a frames/arquivos; a aprovação biomecânica permanece pendente.
+
+**Revisão geométrica interna:** `scripts/test_procedural.py` mede distância do joelho ao tapete, colinearidade ombro–quadril–joelho, deslocamento da perna inferior e verticalidade do tronco sentado. São testes mínimos, não medem contato real com o solo, forças, dor, nem competência clínica.
