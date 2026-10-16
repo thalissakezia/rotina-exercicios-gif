@@ -55,6 +55,7 @@ def get_poses(ex):
              +REV+"/packages/workout-guide/assets/"+slug+"/frame-"+str(i)+".svg")
         try:
             with urllib.request.urlopen(url,timeout=35) as f: data=f.read()
+            data=data.replace(b'fill="#fff"',b'fill="#304470"')  # melhorar contraste nos cartões claros
             png=cairosvg.svg2png(bytestring=data,output_width=335,output_height=335)
             result.append(Image.open(io.BytesIO(png)).convert("RGBA"))
         except Exception as exc:
@@ -107,7 +108,7 @@ def card(ex,series,dose,pose,number):
     d=ImageDraw.Draw(im)
     wrapped(d,ex["instrucoes"],27,422,596,font(17),lines=2)
     d.rounded_rectangle((20,474,630,512),radius=12,fill="#ffffff")
-    d.text((33,483),str(series)+" série(s)  |  "+dose,font=font(19,True),fill=NAVY)
+    d.text((33,483),str(series)+(" série" if series==1 else " séries")+"  |  "+dose,font=font(19,True),fill=NAVY)
     d.text((490,499),"CC BY-SA",font=font(9),fill="#64718a")
     return im
 
