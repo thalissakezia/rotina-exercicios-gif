@@ -26,6 +26,7 @@ COLORS=("#ffeaf2","#e4f5ff","#ebfaeb","#fff3d7","#f1e9ff","#e9f6f5")
 ANIM=(0,1,2,1,0)
 CACHE={}
 ERRORS=set()
+PROCESSED=set()
 
 def font(n,bold=False):
     family="DejaVuSans-Bold.ttf" if bold else "DejaVuSans.ttf"
@@ -140,7 +141,8 @@ def build_day(day):
         ex=INDEX[item["id"]]
         if ex["status"]!="referenciado" or not get_poses(ex):continue
         path=OUT/"gifs"/(item["id"]+".gif")
-        if path.exists():continue
+        if item["id"] in PROCESSED:continue
+        PROCESSED.add(item["id"])
         store_gif([card(ex,item["series"],item["dose"],pose,idx) for pose in ANIM],path)
     return spec
 
