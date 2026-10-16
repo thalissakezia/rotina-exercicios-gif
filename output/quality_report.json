@@ -1,0 +1,401 @@
+{
+  "resultado": "verificacao_digital_nao_biomecanica",
+  "checagens": [
+    {
+      "arquivo": "output/daily/segunda.gif",
+      "tipo": "dia_segunda",
+      "quadros": 5,
+      "largura": 1320,
+      "altura": 1825,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/segunda/agachamento.gif",
+      "tipo": "segunda/agachamento",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/segunda/ponte.gif",
+      "tipo": "segunda/ponte",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/segunda/coice.gif",
+      "tipo": "segunda/coice",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/segunda/lateral.gif",
+      "tipo": "segunda/lateral",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/daily/terca.gif",
+      "tipo": "dia_terca",
+      "quadros": 5,
+      "largura": 1320,
+      "altura": 1825,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/terca/flexao.gif",
+      "tipo": "terca/flexao",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/terca/deadbug.gif",
+      "tipo": "terca/deadbug",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/terca/birddog.gif",
+      "tipo": "terca/birddog",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/terca/yraise.gif",
+      "tipo": "terca/yraise",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/terca/gatovaca.gif",
+      "tipo": "terca/gatovaca",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/daily/quarta.gif",
+      "tipo": "dia_quarta",
+      "quadros": 5,
+      "largura": 1320,
+      "altura": 1825,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/quarta/andar.gif",
+      "tipo": "quarta/andar",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/quarta/circulos.gif",
+      "tipo": "quarta/circulos",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/quarta/posterior.gif",
+      "tipo": "quarta/posterior",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/quarta/gatovaca.gif",
+      "tipo": "quarta/gatovaca",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/quarta/crianca.gif",
+      "tipo": "quarta/crianca",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/daily/quinta.gif",
+      "tipo": "dia_quinta",
+      "quadros": 5,
+      "largura": 1320,
+      "altura": 1825,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/quinta/agachamento.gif",
+      "tipo": "quinta/agachamento",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/quinta/afundolateral.gif",
+      "tipo": "quinta/afundolateral",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/quinta/ponte.gif",
+      "tipo": "quinta/ponte",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/quinta/coice.gif",
+      "tipo": "quinta/coice",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/quinta/concha.gif",
+      "tipo": "quinta/concha",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/daily/sexta.gif",
+      "tipo": "dia_sexta",
+      "quadros": 5,
+      "largura": 1320,
+      "altura": 1825,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/sexta/flexao.gif",
+      "tipo": "sexta/flexao",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/sexta/deadbug.gif",
+      "tipo": "sexta/deadbug",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/sexta/birddog.gif",
+      "tipo": "sexta/birddog",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/sexta/bicicleta.gif",
+      "tipo": "sexta/bicicleta",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/sexta/traise.gif",
+      "tipo": "sexta/traise",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/daily/sabado.gif",
+      "tipo": "dia_sabado",
+      "quadros": 5,
+      "largura": 1320,
+      "altura": 2352,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/sabado/agachamento.gif",
+      "tipo": "sabado/agachamento",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/sabado/flexao.gif",
+      "tipo": "sabado/flexao",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/sabado/ponte.gif",
+      "tipo": "sabado/ponte",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/sabado/birddog.gif",
+      "tipo": "sabado/birddog",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/sabado/afundolateral.gif",
+      "tipo": "sabado/afundolateral",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/sabado/yraise.gif",
+      "tipo": "sabado/yraise",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/daily/domingo.gif",
+      "tipo": "dia_domingo",
+      "quadros": 5,
+      "largura": 1320,
+      "altura": 2352,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/domingo/andar.gif",
+      "tipo": "domingo/andar",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/domingo/ombro.gif",
+      "tipo": "domingo/ombro",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/domingo/peitoral.gif",
+      "tipo": "domingo/peitoral",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/domingo/borboleta.gif",
+      "tipo": "domingo/borboleta",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/domingo/posterior.gif",
+      "tipo": "domingo/posterior",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/domingo/quadril.gif",
+      "tipo": "domingo/quadril",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    }
+  ],
+  "pendencias": [
+    {
+      "dia": "segunda",
+      "id": "interna",
+      "nome": "Elevação interna de perna",
+      "motivo": "sem referência visual exata; GIF individual não produzido"
+    },
+    {
+      "dia": "terca",
+      "id": "prancha-joelhos",
+      "nome": "Prancha com joelhos apoiados",
+      "motivo": "sem referência visual exata; GIF individual não produzido"
+    },
+    {
+      "dia": "quarta",
+      "id": "gluteo-sentado",
+      "nome": "Alongamento de glúteos sentado",
+      "motivo": "sem referência visual exata; GIF individual não produzido"
+    },
+    {
+      "dia": "quinta",
+      "id": "interna",
+      "nome": "Elevação interna de perna",
+      "motivo": "sem referência visual exata; GIF individual não produzido"
+    },
+    {
+      "dia": "sexta",
+      "id": "prancha-joelhos",
+      "nome": "Prancha com joelhos apoiados",
+      "motivo": "sem referência visual exata; GIF individual não produzido"
+    },
+    {
+      "dia": "sabado",
+      "id": "prancha-joelhos",
+      "nome": "Prancha com joelhos apoiados",
+      "motivo": "sem referência visual exata; GIF individual não produzido"
+    },
+    {
+      "dia": "domingo",
+      "id": "gluteo-sentado",
+      "nome": "Alongamento de glúteos sentado",
+      "motivo": "sem referência visual exata; GIF individual não produzido"
+    }
+  ],
+  "avisos": [],
+  "erros": [],
+  "contagem": {
+    "verificados": 43,
+    "pendentes": 7,
+    "erros": 0,
+    "avisos": 0
+  }
+}
