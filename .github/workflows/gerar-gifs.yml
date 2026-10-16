@@ -1,0 +1,44 @@
+name: Gerar GIFs e fichas de treino
+on:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - "requirements.txt"
+      - ".github/workflows/gerar-gifs.yml"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: rotina-exercicios-gif
+  cancel-in-progress: false
+jobs:
+  montar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar dependências gratuitas
+        run: pip install -r requirements.txt
+      - name: Validar e produzir os sete dias
+        run: |
+          python scripts/validate.py
+          python scripts/build.py --all
+      - name: Publicar GIFs no repositório
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add output/
+          if ! git diff --cached --quiet; then
+            git commit -m "build: atualizar GIFs animados da semana"
+            git push
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: semana-em-gifs
+          path: output/
+          retention-days: 30
