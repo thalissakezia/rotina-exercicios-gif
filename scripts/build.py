@@ -170,6 +170,10 @@ def main():
     ap.add_argument("--day",choices=DAYS)
     args=ap.parse_args()
     days=DAYS if args.all or not args.day else [args.day]
+    # Remover os arquivos planos antigos para manter GIFs individuais apenas em pastas por dia.
+    if args.all or not args.day:
+        for old in (OUT/"gifs").glob("*.gif"):
+            old.unlink()
     for day in days:build_day(day)
     generate_html(days)
     if ERRORS:print("Referências indisponíveis:\n"+"\n".join(sorted(ERRORS)))
