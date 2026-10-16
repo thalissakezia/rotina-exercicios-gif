@@ -42,6 +42,14 @@
       "mudanca_detectada": true
     },
     {
+      "arquivo": "output/gifs/segunda/interna.gif",
+      "tipo": "segunda/interna",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
       "arquivo": "output/daily/terca.gif",
       "tipo": "dia_terca",
       "quadros": 5,
@@ -52,6 +60,14 @@
     {
       "arquivo": "output/gifs/terca/flexao.gif",
       "tipo": "terca/flexao",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/terca/prancha-joelhos.gif",
+      "tipo": "terca/prancha-joelhos",
       "quadros": 5,
       "largura": 650,
       "altura": 520,
@@ -122,6 +138,14 @@
       "mudanca_detectada": true
     },
     {
+      "arquivo": "output/gifs/quarta/gluteo-sentado.gif",
+      "tipo": "quarta/gluteo-sentado",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
       "arquivo": "output/gifs/quarta/gatovaca.gif",
       "tipo": "quarta/gatovaca",
       "quadros": 5,
@@ -178,6 +202,14 @@
       "mudanca_detectada": true
     },
     {
+      "arquivo": "output/gifs/quinta/interna.gif",
+      "tipo": "quinta/interna",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
       "arquivo": "output/gifs/quinta/concha.gif",
       "tipo": "quinta/concha",
       "quadros": 5,
@@ -196,6 +228,14 @@
     {
       "arquivo": "output/gifs/sexta/flexao.gif",
       "tipo": "sexta/flexao",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
+      "arquivo": "output/gifs/sexta/prancha-joelhos.gif",
+      "tipo": "sexta/prancha-joelhos",
       "quadros": 5,
       "largura": 650,
       "altura": 520,
@@ -282,6 +322,14 @@
       "mudanca_detectada": true
     },
     {
+      "arquivo": "output/gifs/sabado/prancha-joelhos.gif",
+      "tipo": "sabado/prancha-joelhos",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
       "arquivo": "output/gifs/sabado/yraise.gif",
       "tipo": "sabado/yraise",
       "quadros": 5,
@@ -322,6 +370,14 @@
       "mudanca_detectada": true
     },
     {
+      "arquivo": "output/gifs/domingo/gluteo-sentado.gif",
+      "tipo": "domingo/gluteo-sentado",
+      "quadros": 5,
+      "largura": 650,
+      "altura": 520,
+      "mudanca_detectada": true
+    },
+    {
       "arquivo": "output/gifs/domingo/borboleta.gif",
       "tipo": "domingo/borboleta",
       "quadros": 5,
@@ -351,49 +407,49 @@
       "dia": "segunda",
       "id": "interna",
       "nome": "Elevação interna de perna",
-      "motivo": "sem referência visual exata; GIF individual não produzido"
+      "motivo": "GIF esquemático produzido; ainda precisa de revisão humana de execução"
     },
     {
       "dia": "terca",
       "id": "prancha-joelhos",
       "nome": "Prancha com joelhos apoiados",
-      "motivo": "sem referência visual exata; GIF individual não produzido"
+      "motivo": "GIF esquemático produzido; ainda precisa de revisão humana de execução"
     },
     {
       "dia": "quarta",
       "id": "gluteo-sentado",
       "nome": "Alongamento de glúteos sentado",
-      "motivo": "sem referência visual exata; GIF individual não produzido"
+      "motivo": "GIF esquemático produzido; ainda precisa de revisão humana de execução"
     },
     {
       "dia": "quinta",
       "id": "interna",
       "nome": "Elevação interna de perna",
-      "motivo": "sem referência visual exata; GIF individual não produzido"
+      "motivo": "GIF esquemático produzido; ainda precisa de revisão humana de execução"
     },
     {
       "dia": "sexta",
       "id": "prancha-joelhos",
       "nome": "Prancha com joelhos apoiados",
-      "motivo": "sem referência visual exata; GIF individual não produzido"
+      "motivo": "GIF esquemático produzido; ainda precisa de revisão humana de execução"
     },
     {
       "dia": "sabado",
       "id": "prancha-joelhos",
       "nome": "Prancha com joelhos apoiados",
-      "motivo": "sem referência visual exata; GIF individual não produzido"
+      "motivo": "GIF esquemático produzido; ainda precisa de revisão humana de execução"
     },
     {
       "dia": "domingo",
       "id": "gluteo-sentado",
       "nome": "Alongamento de glúteos sentado",
-      "motivo": "sem referência visual exata; GIF individual não produzido"
+      "motivo": "GIF esquemático produzido; ainda precisa de revisão humana de execução"
     }
   ],
   "avisos": [],
   "erros": [],
   "contagem": {
-    "verificados": 43,
+    "verificados": 50,
     "pendentes": 7,
     "erros": 0,
     "avisos": 0
