@@ -63,6 +63,9 @@ def make_scene(data):
     scene.render.resolution_y=900
     scene.render.resolution_percentage=70
     scene.render.image_settings.file_format="PNG"
+    scene.render.engine="CYCLES"
+    scene.cycles.device="CPU"
+    scene.cycles.samples=8
     scene.render.film_transparent=False
     scene.render.fps=max(2,round(data["fps"]))
     scene.frame_start=1

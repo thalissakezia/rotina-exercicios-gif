@@ -1,0 +1,55 @@
+name: Testar Blender 3D real (dados sintéticos)
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/blender_preview.py"
+      - "scripts/world3d.py"
+      - "scripts/make_blender_smoke_fixture.py"
+      - "scripts/check_blender_scene.py"
+      - "scripts/check_blender_render.py"
+      - "scripts/test_world3d.py"
+      - ".github/workflows/testar-blender-3d.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  blender-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar Blender CPU e Pillow
+        run: |
+          sudo apt-get update -qq
+          sudo DEBIAN_FRONTEND=noninteractive apt-get install -y blender
+          python -m pip install Pillow>=10.4,<12
+          blender --version | head -3
+      - name: Gerar pontos 3D sintéticos apenas para teste
+        run: python scripts/make_blender_smoke_fixture.py
+      - name: Executar Blender em modo headless e renderizar quadro
+        env:
+          OMP_NUM_THREADS: "2"
+        run: |
+          blender --background --threads 2 --python scripts/blender_preview.py -- \
+            --input work_private/rig/smoke-test.json \
+            --out work_private/rig/smoke-test.blend --render-still
+          blender --background --threads 2 work_private/rig/smoke-test.blend \
+            --python scripts/check_blender_scene.py
+          mkdir -p work_private/frames
+          blender --background --threads 2 work_private/rig/smoke-test.blend \
+            -o //../frames/blender_smoke_ -f 1
+          blender --background --threads 2 work_private/rig/smoke-test.blend \
+            -o //../frames/blender_smoke_ -f 4
+          python scripts/check_blender_render.py \
+            work_private/frames/blender_smoke_0001.png \
+            work_private/frames/blender_smoke_0004.png
+      - name: Não publicar dados corporais, vídeos ou imagens de teste
+        run: |
+          test -f work_private/rig/smoke-test.blend
+          test -f work_private/frames/blender_smoke_0001.png
+          test -f work_private/frames/blender_smoke_0004.png
+          echo "BLENDER_SMOKE_TEST_PASS - synthetic test files will be discarded with the runner"
