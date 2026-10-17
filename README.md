@@ -67,3 +67,9 @@ Os três GIFs geométricos geram **12 quadros articulados**, em vez de 3 poses a
 ## Nova fase: importar movimento real sem usar a API
 
 O projeto agora inclui um **pipeline opcional local**, que extrai articulações de um vídeo real autorizado (MediaPipe), valida os pontos e gera apenas uma **prévia GIF com o aviso NÃO VALIDADA**. Nenhum vídeo real foi fornecido ainda; o GitHub Actions não instala MediaPipe nem recebe o vídeo. As prévias privadas **não substituem os GIFs públicos** da rotina automaticamente. Leia [Como capturar um movimento real](docs/CAPTURA-DE-MOVIMENTO.md). Os arquivos permanecem em uma pasta ignorada pelo Git, work_private/. Sem chave de API e sem custos obrigatórios.
+
+## Fase 3D: personagem geométrica experimental
+
+Agora `scripts/world3d.py`, `scripts/prepare_blender_motion.py` e `scripts/blender_preview.py` preparam uma **prévia 3D local** de movimentos capturados com MediaPipe, sem APIs pagas. O Blender deve ser instalado separadamente. Só aceita dados de vídeo autorizado com pontos 3D; **não** cria um movimento confiável a partir de apenas fotos ou quadros inventados.
+
+Os dados e a cena Blender ficam em `work_private/`, excluída do Git. A prévia não é promovida aos GIFs de treino sem revisão humana da técnica. Veja [o guia da fase Blender](docs/BLENDER-3D.md).
