@@ -32,6 +32,7 @@ jobs:
           python scripts/test_capture_pipeline.py
           python scripts/test_world3d.py
           python scripts/test_video_rights.py
+          python scripts/test_batch_capture.py
           python -m py_compile scripts/blender_preview.py
           python scripts/build.py --all
           python scripts/qa_gifs.py

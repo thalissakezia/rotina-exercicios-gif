@@ -73,3 +73,7 @@ O projeto agora inclui um **pipeline opcional local**, que extrai articulações
 Agora `scripts/world3d.py`, `scripts/prepare_blender_motion.py` e `scripts/blender_preview.py` preparam uma **prévia 3D local** de movimentos capturados com MediaPipe, sem APIs pagas. O Blender deve ser instalado separadamente. Só aceita dados de vídeo autorizado com pontos 3D; **não** cria um movimento confiável a partir de apenas fotos ou quadros inventados.
 
 Os dados e a cena Blender ficam em `work_private/`, excluída do Git. A prévia não é promovida aos GIFs de treino sem revisão humana da técnica. Veja [o guia da fase Blender](docs/BLENDER-3D.md).
+
+## Processamento de vídeos em lote (local e privado)
+
+Quando houver vários vídeos da variação correta com direitos e consentimento, o comando `python scripts/batch_capture.py --run` prepara todos de uma vez. Sem vídeos, apenas mostra pendências. O sistema não publica as capturas automaticamente. Consulte [Lote de vídeos](docs/LOTE-DE-VIDEOS.md) e [fila por frequência](output/capture_plan.json).
