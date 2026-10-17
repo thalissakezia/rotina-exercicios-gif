@@ -66,6 +66,9 @@ def make_scene(data):
     scene.render.engine="CYCLES"
     scene.cycles.device="CPU"
     scene.cycles.samples=8
+    # Ubuntu package may not ship OpenImageDenoiser: disable optional render denoiser.
+    for layer in scene.view_layers:
+        layer.cycles.use_denoising=False
     scene.render.film_transparent=False
     scene.render.fps=max(2,round(data["fps"]))
     scene.frame_start=1
