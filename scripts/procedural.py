@@ -5,7 +5,7 @@ Harvard Health e CUH/NHS. Não copia arte/fotografia dessas fontes e não
 constitui avaliação clínica, análise de amplitude ou validação de segurança.
 """
 from PIL import Image, ImageDraw
-from math import sin, pi
+from math import sin, pi, cos, hypot, sqrt
 
 INK="#304470"
 LEGGING="#34446b"
@@ -14,6 +14,7 @@ SHOE="#f794a9"
 SKIN="#e4a27f"
 
 def stroke(d, a, b, color, width=14, outline=3):
+    a,b=tuple(round(x) for x in a),tuple(round(x) for x in b)
     d.line((a[0],a[1],b[0],b[1]),fill=INK,width=width+2*outline,joint="curve")
     d.ellipse((a[0]-(width+2*outline)/2,a[1]-(width+2*outline)/2,a[0]+(width+2*outline)/2,a[1]+(width+2*outline)/2),fill=INK)
     d.ellipse((b[0]-(width+2*outline)/2,b[1]-(width+2*outline)/2,b[0]+(width+2*outline)/2,b[1]+(width+2*outline)/2),fill=INK)
@@ -41,19 +42,47 @@ def arrow(d,x,y):
 def setup():
     return Image.new("RGBA",(335,335),(0,0,0,0))
 
-def inner_thigh(step):
+def eased(frame, count=12):
+    return (1 - cos(2*pi*(frame%count)/count))/2
+
+def rotate(point,pivot,angle):
+    x,y=point[0]-pivot[0],point[1]-pivot[1]
+    return (pivot[0]+x*cos(angle)-y*sin(angle),
+            pivot[1]+x*sin(angle)+y*cos(angle))
+
+def inner_landmarks(t):
+    hip=(156,246)
+    angle=-0.16*t
+    return hip,rotate((223,258),hip,angle),rotate((306,270),hip,angle),rotate((320,271),hip,angle)
+
+def seated_landmarks(t):
+    hip=(131,249)
+    knee=rotate((206,207),hip,-0.13*t)
+    foot=(knee[0]+34,knee[1]+57)
+    toe=(foot[0]+17,foot[1]+7)
+    return hip,knee,foot,toe
+
+def arm_elbow(shoulder,wrist,upper=43,forearm=43):
+    dx,dy=wrist[0]-shoulder[0],wrist[1]-shoulder[1]
+    dist=hypot(dx,dy)
+    if dist>=upper+forearm:
+        raise ValueError("Punho fora do alcance do braço")
+    a=(upper**2-forearm**2+dist**2)/(2*dist)
+    h=sqrt(max(0.0,upper**2-a**2))
+    return (shoulder[0]+a*dx/dist-h*dy/dist,
+            shoulder[1]+a*dy/dist+h*dx/dist)
+
+def inner_thigh(t):
     # PERNA DE BAIXO se move; perna superior DOBRADA fica apoiada.
     im=setup()
     d=ImageDraw.Draw(im)
     mat(d,281)
-    lift=(0,11,24)[step]
-    hip=(156,246)
+    hip,knee,ankle,toe=inner_landmarks(t)
+    lift=24*t
     # Perna inferior sempre estendida, antevista em tom claro.
-    knee=(223,258-lift//2)
-    ankle=(306,264-lift)
     stroke(d,hip,knee,"#52628d",15)
     stroke(d,knee,ankle,"#52628d",14)
-    stroke(d,ankle,(320,265-lift),SHOE,10)
+    stroke(d,ankle,toe,SHOE,10)
     # Perna superior dobrada atravessa a frente, joelho à frente.
     stroke(d,(152,241),(203,218),LEGGING,17)
     stroke(d,(203,218),(216,270),LEGGING,14)
@@ -64,11 +93,11 @@ def inner_thigh(step):
     stroke(d,(81,258),(56,259),SKIN,12)
     head(d,(79,195),19)
     d.ellipse((53,190,60,199),fill="#493448")
-    arrow(d,305,220-lift)
+    arrow(d,305,217-18*t)
     d.text((167,294),"Sobe a perna DE BAIXO",fill=INK)
     return im
 
-def kneeling_plank(step):
+def kneeling_plank(t):
     im=setup()
     d=ImageDraw.Draw(im)
     mat(d,255)
@@ -87,33 +116,33 @@ def kneeling_plank(step):
     stroke(d,(107,159),(72,146),SKIN,13)
     head(d,(67,138),16)
     # O movimento visível é APENAS um discreto indicador de respiração.
-    xx=(175,222,236)[step]
+    xx=round(175+61*t)
     d.ellipse((xx-5,118,xx+5,128),fill="#3a9cc1")
     d.text((144,98),"Respire",fill=INK)
     d.text((147,291),"JOELHO APOIADO: isometria",fill=INK)
     return im
 
-def seated_glute(step):
+def seated_glute(t):
     im=setup()
     d=ImageDraw.Draw(im)
     mat(d,280)
-    delta=(0,5,11)[step]
-    hip=(131,249)
+    delta=11*t
+    hip,cross_knee,foot,toe=seated_landmarks(t)
     # Uma perna estendida; a outra cruzada por cima, joelho abraçado.
     stroke(d,(142,257),(221,268),LEGGING,18)
     stroke(d,(221,268),(301,270),LEGGING,16)
     stroke(d,(301,270),(320,274),SHOE,11)
-    cross_knee=(206-delta,207-delta)
     stroke(d,hip,cross_knee,"#3d527b",19)
-    stroke(d,cross_knee,(240-delta,264),LEGGING,15)
-    stroke(d,(240-delta,264),(257-delta,271),SHOE,10)
+    stroke(d,cross_knee,foot,LEGGING,15)
+    stroke(d,foot,toe,SHOE,10)
     # Tronco ereto fixo, sem torsão agressiva
     stroke(d,hip,(134,166),PINK,29)
     head(d,(133,132),18)
-    stroke(d,(144,173),(183-delta,202-delta),SKIN,13)
-    stroke(d,(183-delta,202-delta),(198-delta,208-delta),SKIN,11)
-    stroke(d,(117,174),(168-delta,211-delta),SKIN,12)
-    stroke(d,(168-delta,211-delta),(197-delta,208-delta),SKIN,11)
+    target=(cross_knee[0]-7,cross_knee[1]+3)
+    for shoulder in ((144,173),(117,174)):
+        elbow=arm_elbow(shoulder,target)
+        stroke(d,shoulder,elbow,SKIN,11)
+        stroke(d,elbow,target,SKIN,10)
     d.text((153,292),"Joelho ao peito, sem forçar",fill=INK)
     return im
 
@@ -124,8 +153,9 @@ SEATED_TORSO={"hip":(131,249),"shoulder":(134,166)}
 
 BUILDERS={"interna":inner_thigh,"prancha-joelhos":kneeling_plank,"gluteo-sentado":seated_glute}
 
-def build(exercise_id):
-    """Três poses por exercício, origem 100% programática."""
+def build(exercise_id, frame_count=12):
+    """Fases suaves em loop, sem gerar imagem por IA."""
     if exercise_id not in BUILDERS:
         raise KeyError(exercise_id)
-    return [BUILDERS[exercise_id](i) for i in range(3)]
+    if frame_count<8: raise ValueError("Mínimo de 8 quadros")
+    return [BUILDERS[exercise_id](eased(i,frame_count)) for i in range(frame_count)]
