@@ -11,6 +11,9 @@ on:
       - "scripts/test_world3d.py"
       - ".github/workflows/testar-blender-3d.yml"
   workflow_dispatch:
+concurrency:
+  group: blender-real-smoke
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
@@ -26,7 +29,7 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo DEBIAN_FRONTEND=noninteractive apt-get install -y blender
-          python -m pip install Pillow>=10.4,<12
+          python -m pip install "Pillow>=10.4,<12"
           blender --version | head -3
       - name: Gerar pontos 3D sintéticos apenas para teste
         run: python scripts/make_blender_smoke_fixture.py
