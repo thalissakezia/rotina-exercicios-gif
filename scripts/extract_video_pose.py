@@ -66,7 +66,15 @@ def main():
                 landmarks=result.pose_landmarks[0]
                 joint_data={name:[float(landmarks[j].x),float(landmarks[j].y),
                                   float(landmarks[j].visibility or 0)] for name,j in zip(NAMES,INDICES)}
-                frames.append({"time_ms":t,"landmarks":joint_data})
+                frame={"time_ms":t,"landmarks":joint_data}
+                if result.pose_world_landmarks:
+                    world=result.pose_world_landmarks[0]
+                    frame["world_landmarks"]={
+                        name:[float(world[j].x),float(world[j].y),float(world[j].z),
+                              float(world[j].visibility or 0)]
+                        for name,j in zip(NAMES,INDICES)
+                    }
+                frames.append(frame)
     finally:
         cap.release()
     record={
