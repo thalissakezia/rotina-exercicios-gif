@@ -1,0 +1,412 @@
+{
+  "schema_version": 1,
+  "objetivo": "capturar vídeo autorizado, avaliar forma, produzir avatar padronizado",
+  "nao_inferir_que_esta_aprovado": true,
+  "total_exercicios_distintos": 24,
+  "total_ocorrencias": 43,
+  "exercicios": [
+    {
+      "id": "agachamento",
+      "nome": "Agachamento no tapete",
+      "dias": [
+        "segunda",
+        "quinta",
+        "sabado"
+      ],
+      "vezes_na_semana": 3,
+      "prioridade": 0,
+      "visao_sugerida": "obliqua",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "coxas, glúteos e core"
+    },
+    {
+      "id": "birddog",
+      "nome": "Bird-dog",
+      "dias": [
+        "terca",
+        "sexta",
+        "sabado"
+      ],
+      "vezes_na_semana": 3,
+      "prioridade": 0,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "core, glúteos, lombar e ombros"
+    },
+    {
+      "id": "flexao",
+      "nome": "Flexão com joelhos apoiados",
+      "dias": [
+        "terca",
+        "sexta",
+        "sabado"
+      ],
+      "vezes_na_semana": 3,
+      "prioridade": 0,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "peitoral, tríceps, ombros e core"
+    },
+    {
+      "id": "ponte",
+      "nome": "Ponte de glúteos",
+      "dias": [
+        "segunda",
+        "quinta",
+        "sabado"
+      ],
+      "vezes_na_semana": 3,
+      "prioridade": 0,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "glúteos, posteriores da coxa e core"
+    },
+    {
+      "id": "coice",
+      "nome": "Coice de glúteo",
+      "dias": [
+        "segunda",
+        "quinta"
+      ],
+      "vezes_na_semana": 2,
+      "prioridade": 0,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "glúteos, posteriores da coxa e core"
+    },
+    {
+      "id": "deadbug",
+      "nome": "Dead bug",
+      "dias": [
+        "terca",
+        "sexta"
+      ],
+      "vezes_na_semana": 2,
+      "prioridade": 0,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "abdômen, core e estabilidade"
+    },
+    {
+      "id": "interna",
+      "nome": "Elevação interna de perna",
+      "dias": [
+        "segunda",
+        "quinta"
+      ],
+      "vezes_na_semana": 2,
+      "prioridade": 0,
+      "visao_sugerida": "frontal",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "adutores e core"
+    },
+    {
+      "id": "lateral",
+      "nome": "Elevação lateral de perna",
+      "dias": [
+        "segunda"
+      ],
+      "vezes_na_semana": 1,
+      "prioridade": 0,
+      "visao_sugerida": "frontal",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "glúteos, abdutores e core"
+    },
+    {
+      "id": "prancha-joelhos",
+      "nome": "Prancha com joelhos apoiados",
+      "dias": [
+        "terca",
+        "sexta",
+        "sabado"
+      ],
+      "vezes_na_semana": 3,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "abdômen, ombros, braços e core"
+    },
+    {
+      "id": "afundolateral",
+      "nome": "Afundo lateral",
+      "dias": [
+        "quinta",
+        "sabado"
+      ],
+      "vezes_na_semana": 2,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "glúteos, coxas e adutores"
+    },
+    {
+      "id": "gluteo-sentado",
+      "nome": "Alongamento de glúteos sentado",
+      "dias": [
+        "quarta",
+        "domingo"
+      ],
+      "vezes_na_semana": 2,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "glúteos, quadris e lombar"
+    },
+    {
+      "id": "posterior",
+      "nome": "Alongamento posterior de coxa",
+      "dias": [
+        "quarta",
+        "domingo"
+      ],
+      "vezes_na_semana": 2,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "posteriores de coxa e mobilidade"
+    },
+    {
+      "id": "andar",
+      "nome": "Caminhada leve",
+      "dias": [
+        "quarta",
+        "domingo"
+      ],
+      "vezes_na_semana": 2,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "pernas, glúteos e condicionamento"
+    },
+    {
+      "id": "yraise",
+      "nome": "Elevação Y deitada",
+      "dias": [
+        "terca",
+        "sabado"
+      ],
+      "vezes_na_semana": 2,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "costas superiores, ombros e postura"
+    },
+    {
+      "id": "gatovaca",
+      "nome": "Gato-vaca",
+      "dias": [
+        "terca",
+        "quarta"
+      ],
+      "vezes_na_semana": 2,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "coluna e mobilidade"
+    },
+    {
+      "id": "bicicleta",
+      "nome": "Abdominal bicicleta lento",
+      "dias": [
+        "sexta"
+      ],
+      "vezes_na_semana": 1,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "abdômen, oblíquos e core"
+    },
+    {
+      "id": "quadril",
+      "nome": "Alongamento de flexores do quadril",
+      "dias": [
+        "domingo"
+      ],
+      "vezes_na_semana": 1,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "flexores de quadril e postura"
+    },
+    {
+      "id": "ombro",
+      "nome": "Alongamento de ombros",
+      "dias": [
+        "domingo"
+      ],
+      "vezes_na_semana": 1,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "ombros e braços"
+    },
+    {
+      "id": "peitoral",
+      "nome": "Alongamento de peitoral na porta",
+      "dias": [
+        "domingo"
+      ],
+      "vezes_na_semana": 1,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "peitoral, ombros e braços"
+    },
+    {
+      "id": "borboleta",
+      "nome": "Borboleta",
+      "dias": [
+        "domingo"
+      ],
+      "vezes_na_semana": 1,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "adutores e quadris"
+    },
+    {
+      "id": "concha",
+      "nome": "Concha lateral",
+      "dias": [
+        "quinta"
+      ],
+      "vezes_na_semana": 1,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "glúteos e abdutores"
+    },
+    {
+      "id": "circulos",
+      "nome": "Círculos de braços",
+      "dias": [
+        "quarta"
+      ],
+      "vezes_na_semana": 1,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "ombros e costas superiores"
+    },
+    {
+      "id": "traise",
+      "nome": "Elevação T deitada",
+      "dias": [
+        "sexta"
+      ],
+      "vezes_na_semana": 1,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "costas superiores, ombros e postura"
+    },
+    {
+      "id": "crianca",
+      "nome": "Postura da criança",
+      "dias": [
+        "quarta"
+      ],
+      "vezes_na_semana": 1,
+      "prioridade": 1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "costas, quadril e mobilidade"
+    }
+  ]
+}
