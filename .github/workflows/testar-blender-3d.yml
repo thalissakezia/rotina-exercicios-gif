@@ -9,6 +9,9 @@ on:
       - "scripts/check_blender_scene.py"
       - "scripts/check_blender_render.py"
       - "scripts/test_world3d.py"
+      - "scripts/render_review_gif.py"
+      - "scripts/approval_gate.py"
+      - "scripts/test_review_gate.py"
       - ".github/workflows/testar-blender-3d.yml"
   workflow_dispatch:
 concurrency:
@@ -50,9 +53,18 @@ jobs:
           python scripts/check_blender_render.py \
             work_private/frames/blender_smoke_0001.png \
             work_private/frames/blender_smoke_0004.png
+          blender --background --threads 2 work_private/rig/smoke-test.blend \
+            -o //../frames/review_ -a
+          python scripts/render_review_gif.py \
+            --frames-dir work_private/frames --prefix review_ \
+            --out work_private/review/smoke-preview.gif \
+            --contact-sheet work_private/review/smoke-contact-sheet.png --test-only
+          python scripts/test_review_gate.py
       - name: Não publicar dados corporais, vídeos ou imagens de teste
         run: |
           test -f work_private/rig/smoke-test.blend
           test -f work_private/frames/blender_smoke_0001.png
           test -f work_private/frames/blender_smoke_0004.png
+          test -f work_private/review/smoke-preview.gif
+          test -f work_private/review/smoke-contact-sheet.png
           echo "BLENDER_SMOKE_TEST_PASS - synthetic test files will be discarded with the runner"

@@ -77,3 +77,11 @@ Os dados e a cena Blender ficam em `work_private/`, excluída do Git. A prévia 
 ## Processamento de vídeos em lote (local e privado)
 
 Quando houver vários vídeos da variação correta com direitos e consentimento, o comando `python scripts/batch_capture.py --run` prepara todos de uma vez. Sem vídeos, apenas mostra pendências. O sistema não publica as capturas automaticamente. Consulte [Lote de vídeos](docs/LOTE-DE-VIDEOS.md) e [fila por frequência](output/capture_plan.json).
+
+## Revisão antes de substituir os GIFs
+
+O projeto agora renderiza **um ciclo 3D completo** com Blender, converte os quadros em um GIF privado de prévia e gera uma folha de seis posições para inspeção. Um checklist independente exige confirmação dos direitos de uso, correspondência da variação, execução, articulações, pelve/coluna e sequência de frames, além de nome e qualificação do revisor e hashes do vídeo e do GIF.
+
+O comando `scripts/approval_gate.py` **não publica nada**, mesmo com todos os campos aceitos: apenas sinaliza se a revisão documental foi preenchida para preparação manual. Não comprova credenciais ou biomecânica automaticamente.
+
+Veja [revisão de GIFs e movimento](docs/REVISAO-E-PUBLICACAO.md). No teste automatizado, os quadros são **sintéticos** e o GIF carrega um aviso permanente. **Os 50 GIFs de treino atuais não serão substituídos automaticamente.**
