@@ -43,7 +43,7 @@ for day in DAYS:
                     errors.append("Menos de 10 quadros no GIF articulado: "+day+"/"+it["id"])
                 report["pendencias"].append({"dia":day,"id":it["id"],"nome":ex["nome"],"motivo":"GIF esquemático produzido; ainda precisa de revisão humana de execução"})
         else:
-            report["pendencias"].append({"dia":day,"id":it["id"],"nome":ex["nome"],"motivo":"sem referência visual exata; GIF individual não produzido"})
+            report["pendencias"].append({"dia":day,"id":it["id"],"nome":ex["nome"],"motivo":"demonstração anterior incorreta ou sem referência exata; GIF suspenso"})
 report["erros"]=errors
 report["contagem"]={"verificados":len(report["checagens"]),"pendentes":len(report["pendencias"]),"erros":len(errors),"avisos":len(report["avisos"])}
 (OUT/"quality_report.json").write_text(json.dumps(report,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")

@@ -153,7 +153,10 @@ def build_day(day):
     print("Dia gerado:",day,len(spec["exercicios"]),"exercícios")
     for idx,item in enumerate(spec["exercicios"]):
         ex=INDEX[item["id"]]
-        if ex["status"] not in ("referenciado","procedural_review") or not get_poses(ex):continue
+        if ex["status"] not in ("referenciado","procedural_review") or not get_poses(ex):
+            stale=OUT/"gifs"/day/(item["id"]+".gif")
+            if stale.exists():stale.unlink()
+            continue
         path=OUT/"gifs"/day/(item["id"]+".gif")
         if day+"/"+item["id"] in PROCESSED:continue
         PROCESSED.add(day+"/"+item["id"])

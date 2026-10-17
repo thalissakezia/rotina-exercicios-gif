@@ -9,10 +9,12 @@
     {
       "id": "agachamento",
       "nome": "Agachamento no tapete",
-      "slug": "bodyweight-squat",
+      "slug": null,
       "musculos": "coxas, glúteos e core",
       "instrucoes": "Afaste os pés na largura dos ombros e agache sem deixar os joelhos colapsarem para dentro.",
-      "status": "referenciado"
+      "status": "revisao_pendente",
+      "quality": "Representação anterior incompatível com o exercício; visual bloqueado até revisão",
+      "reference_url": "https://www.acefitness.org/resources/everyone/exercise-library/"
     },
     {
       "id": "ponte",
@@ -52,10 +54,12 @@
     {
       "id": "flexao",
       "nome": "Flexão com joelhos apoiados",
-      "slug": "knee-push-up",
+      "slug": null,
       "musculos": "peitoral, tríceps, ombros e core",
       "instrucoes": "Com os joelhos no tapete, flexione os cotovelos mantendo a linha entre cabeça e joelhos.",
-      "status": "referenciado"
+      "status": "revisao_pendente",
+      "quality": "Representação anterior incompatível com o exercício; visual bloqueado até revisão",
+      "reference_url": "https://www.acefitness.org/resources/everyone/exercise-library/"
     },
     {
       "id": "deadbug",
@@ -84,10 +88,12 @@
     {
       "id": "traise",
       "nome": "Elevação T deitada",
-      "slug": "prone-t-raise",
+      "slug": null,
       "musculos": "costas superiores, ombros e postura",
       "instrucoes": "De barriga para baixo, braços em T; eleve discretamente e una as escápulas.",
-      "status": "referenciado"
+      "status": "revisao_pendente",
+      "quality": "Representação anterior incompatível com o exercício; visual bloqueado até revisão",
+      "reference_url": "https://www.acefitness.org/resources/everyone/exercise-library/"
     },
     {
       "id": "scappush",
@@ -215,9 +221,9 @@
       "slug": null,
       "musculos": "abdômen, ombros, braços e core",
       "instrucoes": "Antebraços e JOELHOS apoiados no tapete. Cotovelos abaixo dos ombros; mantenha tronco alinhado da cabeça aos joelhos, respirando.",
-      "status": "procedural_review",
+      "status": "revisao_pendente",
       "reference_url": "https://www.health.harvard.edu/healthy-aging-and-longevity/try-this-move-for-better-core-strength",
-      "quality": "demonstração geométrica baseada em instrução técnica; revisar antes de uso como guia certificado",
+      "quality": "Representação anterior incompatível com o exercício; visual bloqueado até revisão",
       "drawing_kind": "prancha-joelhos"
     },
     {
