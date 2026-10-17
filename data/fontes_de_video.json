@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "policy": "Não importar, clonar, baixar, republicar nem treinar modelo com vídeo cuja licença de distribuição e adaptação não esteja expressamente verificada. Licença MIT do código não basta para vídeos hospedados por terceiros.",
+  "sources": [
+    {
+      "id": "exercise-db-third-party",
+      "name": "Free Exercise DB with Videos",
+      "url": "https://github.com/buzops9/exercisedb",
+      "media": "videos",
+      "rights": "unverified",
+      "allowed_for_render": false,
+      "reason": "O próprio README declara origem e cadeia de direitos dos vídeos desconhecidas; licença MIT explícita para código e metadados, não comprovada para toda filmagem."
+    },
+    {
+      "id": "yorksj-library",
+      "name": "York St John University Exercise Library",
+      "url": "https://www.yorksj.ac.uk/ysjactive/exercise-library/",
+      "media": "videos",
+      "rights": "personal_view_only",
+      "allowed_for_render": false,
+      "reason": "A página restringe as demonstrações ao uso pessoal e pede que não sejam compartilhadas/republicadas."
+    },
+    {
+      "id": "wikimedia-glute-bridge-still",
+      "name": "Wikimedia Commons — Glute-bridge.png",
+      "url": "https://commons.wikimedia.org/wiki/File:Glute-bridge.png",
+      "media": "static_image",
+      "rights": "cc-by-sa-4.0",
+      "allowed_for_render": false,
+      "reason": "Imagem CC BY-SA, mas não é vídeo de execução contínua; não pode servir como captura de movimento."
+    },
+    {
+      "id": "workout-guide",
+      "name": "Workout Guide — Bryl Lim/Everkinetic",
+      "url": "https://github.com/bryllim/workout-guide",
+      "media": "three_svgs_per_exercise",
+      "rights": "cc-by-sa-4.0",
+      "allowed_for_render": false,
+      "reason": "Três desenhos licenciados são utilizados nas fichas existentes; não representam captura de movimento real."
+    }
+  ]
+}

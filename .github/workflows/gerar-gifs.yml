@@ -31,9 +31,11 @@ jobs:
           python scripts/test_procedural.py
           python scripts/test_capture_pipeline.py
           python scripts/test_world3d.py
+          python scripts/test_video_rights.py
           python -m py_compile scripts/blender_preview.py
           python scripts/build.py --all
           python scripts/qa_gifs.py
+          python scripts/plan_captures.py
       - name: Publicar GIFs no repositório
         run: |
           git config user.name "github-actions[bot]"
