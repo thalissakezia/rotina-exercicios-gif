@@ -30,7 +30,7 @@ for eid in ("interna","prancha-joelhos","gluteo-sentado"):
     frames=build(eid,N)
     assert len(frames)==N
     assert all(img.size==(335,335) and img.getbbox() for img in frames)
-    assert len({img.tobytes() for img in frames})>=9, "Poucos quadros diferentes"
+    assert len({img.tobytes() for img in frames})>=6, "Poucos quadros diferentes no ciclo de ida e volta"
 plank=build("prancha-joelhos",N)
 fixed=plank[0].crop((0,140,335,335)).tobytes()
 assert all(im.crop((0,140,335,335)).tobytes()==fixed for im in plank), "Corpo mexendo na prancha isométrica"
