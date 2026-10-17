@@ -6,6 +6,41 @@
   "total_ocorrencias": 43,
   "exercicios": [
     {
+      "id": "ponte",
+      "nome": "Ponte de glúteos",
+      "dias": [
+        "segunda",
+        "quinta",
+        "sabado"
+      ],
+      "vezes_na_semana": 3,
+      "prioridade": -2,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "glúteos, posteriores da coxa e core"
+    },
+    {
+      "id": "coice",
+      "nome": "Coice de glúteo",
+      "dias": [
+        "segunda",
+        "quinta"
+      ],
+      "vezes_na_semana": 2,
+      "prioridade": -1,
+      "visao_sugerida": "lateral",
+      "origem_video": "não fornecida",
+      "direitos_video": "não verificados",
+      "captura_real": "não iniciada",
+      "revisao_movimento": "pendente",
+      "publicacao_permitida": false,
+      "musculos": "glúteos, posteriores da coxa e core"
+    },
+    {
       "id": "agachamento",
       "nome": "Agachamento no tapete",
       "dias": [
@@ -58,41 +93,6 @@
       "revisao_movimento": "pendente",
       "publicacao_permitida": false,
       "musculos": "peitoral, tríceps, ombros e core"
-    },
-    {
-      "id": "ponte",
-      "nome": "Ponte de glúteos",
-      "dias": [
-        "segunda",
-        "quinta",
-        "sabado"
-      ],
-      "vezes_na_semana": 3,
-      "prioridade": 0,
-      "visao_sugerida": "lateral",
-      "origem_video": "não fornecida",
-      "direitos_video": "não verificados",
-      "captura_real": "não iniciada",
-      "revisao_movimento": "pendente",
-      "publicacao_permitida": false,
-      "musculos": "glúteos, posteriores da coxa e core"
-    },
-    {
-      "id": "coice",
-      "nome": "Coice de glúteo",
-      "dias": [
-        "segunda",
-        "quinta"
-      ],
-      "vezes_na_semana": 2,
-      "prioridade": 0,
-      "visao_sugerida": "lateral",
-      "origem_video": "não fornecida",
-      "direitos_video": "não verificados",
-      "captura_real": "não iniciada",
-      "revisao_movimento": "pendente",
-      "publicacao_permitida": false,
-      "musculos": "glúteos, posteriores da coxa e core"
     },
     {
       "id": "deadbug",
