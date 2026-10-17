@@ -29,6 +29,7 @@ jobs:
           python scripts/validate.py
           python scripts/audit_originais.py
           python scripts/test_procedural.py
+          python scripts/test_capture_pipeline.py
           python scripts/build.py --all
           python scripts/qa_gifs.py
       - name: Publicar GIFs no repositório

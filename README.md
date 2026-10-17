@@ -62,3 +62,8 @@ Adicionamos `scripts/procedural.py`: desenho geométrico determinístico de trê
 ## Próxima fase — piloto de fluidez sem APIs pagas
 
 Os três GIFs geométricos geram **12 quadros articulados**, em vez de 3 poses abruptas, com controle de comprimento de pernas/braços, contato de joelho no tapete e isometria da prancha. Os outros exercícios **continuam com apenas três posições reais** do Workout Guide: nenhuma interpolação automática de pessoas foi aplicada a eles. O relatório de qualidade exige ao menos 10 quadros para os três pilotos e os testes geométricos verificam continuidade e proporções. Tudo segue em revisão técnica; movimento correto exige validação humana.
+
+
+## Nova fase: importar movimento real sem usar a API
+
+O projeto agora inclui um **pipeline opcional local**, que extrai articulações de um vídeo real autorizado (MediaPipe), valida os pontos e gera apenas uma **prévia GIF com o aviso NÃO VALIDADA**. Nenhum vídeo real foi fornecido ainda; o GitHub Actions não instala MediaPipe nem recebe o vídeo. As prévias privadas **não substituem os GIFs públicos** da rotina automaticamente. Leia [Como capturar um movimento real](docs/CAPTURA-DE-MOVIMENTO.md). Os arquivos permanecem em uma pasta ignorada pelo Git, work_private/. Sem chave de API e sem custos obrigatórios.

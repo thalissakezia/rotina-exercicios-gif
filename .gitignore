@@ -1,3 +1,10 @@
 __pycache__/
 *.pyc
 .venv/
+work_private/
+*.task
+*.mp4
+*.mov
+*.avi
+.env
+.env.*
