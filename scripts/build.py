@@ -24,7 +24,10 @@ PINK="#e42c75"
 NAVY="#142456"
 ORANGE="#f16b3c"
 COLORS=("#ffeaf2","#e4f5ff","#ebfaeb","#fff3d7","#f1e9ff","#e9f6f5")
-ANIM=(0,1,2,1,0)
+FRAME_COUNT=12
+ANIM=tuple(range(FRAME_COUNT))
+# SVGs originais continuam com 3 poses documentadas; não inventar membros.
+SVG_TRACK=(0,0,0,1,1,2,2,2,1,1,0,0)
 CACHE={}
 ERRORS=set()
 PROCESSED=set()
@@ -49,7 +52,10 @@ def wrapped(draw,txt,x,y,limit,f,color=NAVY,lines=2,spacing=1.25):
 
 def get_poses(ex):
     if ex["status"]=="procedural_review":
-        return build_procedural(ex["id"])
+        key="procedural/"+ex["id"]
+        if key not in CACHE:
+            CACHE[key]=build_procedural(ex["id"],FRAME_COUNT)
+        return CACHE[key]
     if ex["status"]!="referenciado":return []
     slug=ex["slug"]
     if slug in CACHE:return CACHE[slug]
@@ -103,7 +109,8 @@ def card(ex,series,dose,pose,number):
     diagram(d,21,158,ex["musculos"].split(","))
     poses=get_poses(ex)
     if poses:
-        art=poses[pose].resize((285,285),Image.Resampling.LANCZOS)
+        actual=pose if ex["status"]=="procedural_review" else SVG_TRACK[pose]
+        art=poses[actual].resize((285,285),Image.Resampling.LANCZOS)
         im.paste(art,(230,128),art)
     else:
         d.rounded_rectangle((175,163,625,379),radius=15,fill="#fff7f7")
@@ -123,7 +130,7 @@ def card(ex,series,dose,pose,number):
 def store_gif(frames,path):
     path.parent.mkdir(parents=True,exist_ok=True)
     quant=[f.quantize(colors=112,method=Image.Quantize.MEDIANCUT) for f in frames]
-    quant[0].save(path,save_all=True,append_images=quant[1:],duration=[310,270,380,270,310],loop=0,disposal=2,optimize=True)
+    quant[0].save(path,save_all=True,append_images=quant[1:],duration=[160]*len(frames),loop=0,disposal=2,optimize=True)
 
 def build_day(day):
     spec=json.loads((ROOT/"data/dias"/(day+".json")).read_text(encoding="utf-8"))

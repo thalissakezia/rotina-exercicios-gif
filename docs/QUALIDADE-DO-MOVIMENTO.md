@@ -37,3 +37,10 @@ Fontes **apenas para instrução técnica** (imagens/fotografias das fontes não
 **Estado:** demonstrações geradas automaticamente e verificadas quanto a frames/arquivos; a aprovação biomecânica permanece pendente.
 
 **Revisão geométrica interna:** `scripts/test_procedural.py` mede distância do joelho ao tapete, colinearidade ombro–quadril–joelho, deslocamento da perna inferior e verticalidade do tronco sentado. São testes mínimos, não medem contato real com o solo, forças, dor, nem competência clínica.
+
+
+## Piloto de 12 quadros articulados
+
+As demonstrações geométricas de elevação interna de perna, prancha de joelhos e alongamento de glúteos sentado têm agora **12 quadros com easing cossenoidal**. A perna que se move usa rotação em torno do quadril para preservar comprimentos; no alongamento sentado, os braços usam cinemática inversa 2D para preservar o comprimento dos segmentos; na prancha o corpo continua imóvel e somente o indicador de respiração varia.
+
+Os demais exercícios possuem **3 poses do Workout Guide**, repetidas ao longo de um ciclo de 12 tempos: portanto **não são animações anatomicamente suaves**. O piloto não substitui avaliação profissional dos movimentos. Nenhum sistema de IA externa foi instalado ou acionado.

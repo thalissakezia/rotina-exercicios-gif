@@ -139,7 +139,7 @@ def seated_glute(t):
     stroke(d,hip,(134,166),PINK,29)
     head(d,(133,132),18)
     target=(cross_knee[0]-7,cross_knee[1]+3)
-    for shoulder in ((144,173),(117,174)):
+    for shoulder in ((144,173),(125,175)):
         elbow=arm_elbow(shoulder,target)
         stroke(d,shoulder,elbow,SKIN,11)
         stroke(d,elbow,target,SKIN,10)

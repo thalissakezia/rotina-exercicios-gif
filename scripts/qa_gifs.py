@@ -39,6 +39,8 @@ for day in DAYS:
         if ex["status"] in ("referenciado","procedural_review"):
             inspect(OUT/"gifs"/day/(it["id"]+".gif"),day+"/"+it["id"])
             if ex["status"]=="procedural_review":
+                if report["checagens"][-1]["quadros"]<10:
+                    errors.append("Menos de 10 quadros no GIF articulado: "+day+"/"+it["id"])
                 report["pendencias"].append({"dia":day,"id":it["id"],"nome":ex["nome"],"motivo":"GIF esquemático produzido; ainda precisa de revisão humana de execução"})
         else:
             report["pendencias"].append({"dia":day,"id":it["id"],"nome":ex["nome"],"motivo":"sem referência visual exata; GIF individual não produzido"})

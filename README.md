@@ -57,3 +57,8 @@ O painel HTML precisa ser aberto com os GIFs na pasta ao lado. O pacote completo
 Adicionamos `scripts/procedural.py`: desenho geométrico determinístico de três variações sem SVG correspondente no Workout Guide. Todos os exercícios possuem agora ficha e arquivo GIF, mas essas três demonstrações estão rotuladas **revisão técnica pendente**. A prancha com joelhos é isométrica: não inventamos repetição, só variamos o indicador de respiração. As referências científicas estão em `docs/QUALIDADE-DO-MOVIMENTO.md`. Os GIFs esquemáticos não são certificados.
 
 **Atenção:** os três novos GIFs procedurais são modelos esquemáticos experimentais. Não equivalem a filmagem, nem passaram por validação clínica. O apoio real dos joelhos na prancha é confirmado por teste geométrico (`scripts/test_procedural.py`).
+
+
+## Próxima fase — piloto de fluidez sem APIs pagas
+
+Os três GIFs geométricos geram **12 quadros articulados**, em vez de 3 poses abruptas, com controle de comprimento de pernas/braços, contato de joelho no tapete e isometria da prancha. Os outros exercícios **continuam com apenas três posições reais** do Workout Guide: nenhuma interpolação automática de pessoas foi aplicada a eles. O relatório de qualidade exige ao menos 10 quadros para os três pilotos e os testes geométricos verificam continuidade e proporções. Tudo segue em revisão técnica; movimento correto exige validação humana.
