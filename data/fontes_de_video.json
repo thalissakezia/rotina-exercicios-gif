@@ -37,6 +37,50 @@
       "rights": "cc-by-sa-4.0",
       "allowed_for_render": false,
       "reason": "Três desenhos licenciados são utilizados nas fichas existentes; não representam captura de movimento real."
+    },
+    {
+      "id": "pexels-ponte-feminina",
+      "name": "Pexels — Woman Doing Glute Bridge Exercise",
+      "url": "https://www.pexels.com/video/woman-doing-glute-bridge-exercise-6525487/",
+      "license_url": "https://www.pexels.com/license/",
+      "media": "video",
+      "exercise_id": "ponte",
+      "rights": "pexels_license_requires_specific_review",
+      "allowed_for_render": false,
+      "reason": "Pexels permite modificações e uso gratuito; candidata de 7 s, 25 FPS. A correspondência da execução, direitos relativos à imagem da pessoa e restrições contra endosso ainda precisam de checagem humana antes de capturar/publicar."
+    },
+    {
+      "id": "pexels-coice-candidata",
+      "name": "Pexels — Woman Doing Donkey Kick Exercise",
+      "url": "https://www.pexels.com/video/woman-doing-donkey-kick-exercise-10740728/",
+      "license_url": "https://www.pexels.com/license/",
+      "media": "video",
+      "exercise_id": "coice",
+      "rights": "pexels_license_requires_specific_review",
+      "allowed_for_render": false,
+      "reason": "Pexels permite uso e modificações gratuitos, mas vídeo mostra exercício realizado sobre caminhão/plataforma, não no tapete; checar correspondência da variante e direitos de imagem antes de qualquer reutilização."
+    },
+    {
+      "id": "dvids-donkey-kick",
+      "name": "DVIDS — Donkey Kick (US Marine Corps)",
+      "url": "https://www.dvidshub.net/video/677352/donkey-kick",
+      "license_url": "https://www.dvidshub.net/about/copyright",
+      "media": "video",
+      "exercise_id": "coice",
+      "rights": "public_domain_marked_privacy_review_pending",
+      "allowed_for_render": false,
+      "reason": "A página marca domínio público, mas os termos expressamente não renunciam a direitos de personalidade e vedam sugestão de endosso. Também exige checagem da variante antes do uso."
+    },
+    {
+      "id": "dvids-bridge-restricted",
+      "name": "DVIDS — One Minute Glute Bridge Challenge",
+      "url": "https://www.dvidshub.net/video/757660/one-minute-glute-bridge-challenge",
+      "license_url": "https://www.dvidshub.net/about/copyright",
+      "media": "video",
+      "exercise_id": "ponte",
+      "rights": "some_copyrighted_content_not_distributable",
+      "allowed_for_render": false,
+      "reason": "A página indica que partes incluem material protegido que não está licenciado para redistribuição. Rejeitado para importação automática."
     }
   ]
 }

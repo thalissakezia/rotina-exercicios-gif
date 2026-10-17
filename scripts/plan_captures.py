@@ -27,7 +27,7 @@ def make_plan():
         items.append({
           "id":eid,"nome":e["nome"],"dias":schedule[eid],
           "vezes_na_semana":n,
-          "prioridade":0 if eid in FOCUS else 1,
+          "prioridade":(-2 if eid=="ponte" else -1 if eid=="coice" else 0 if eid in FOCUS else 1),
           "visao_sugerida":VIEWS.get(eid,"lateral"),
           "origem_video":"não fornecida",
           "direitos_video":"não verificados",

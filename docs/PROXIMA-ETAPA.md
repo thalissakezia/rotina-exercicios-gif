@@ -20,3 +20,12 @@ O projeto já consegue capturar coordenadas 2D/3D com MediaPipe, gerar uma prév
 **Fonte descartada:** a Free Exercise DB with Videos tem metadados/código MIT, mas o próprio README afirma não saber a proveniência dos vídeos. A York St John University proíbe redistribuição. O arquivo Glute-bridge.png do Wikimedia Commons é estático; possuir licença permissiva não o transforma em fonte de movimento real.
 
 O projeto continuará sem API paga. Não usar o GitHub público para armazenar vídeo identificável sem autorização expressa.
+
+## Candidatos de vídeos gratuitos encontrados (não importados)
+
+- [Pexels: ponte de glúteos, 7 s](https://www.pexels.com/video/woman-doing-glute-bridge-exercise-6525487/) — licença Pexels permite modificações; revisar variante exata, enquadramento e uso da imagem da pessoa.
+- [Pexels: coice, 11 s](https://www.pexels.com/video/woman-doing-donkey-kick-exercise-10740728/) — gravado em plataforma/caminhão, não sobre tapete, portanto pode não atender nossa variação.
+- [DVIDS: Donkey Kick](https://www.dvidshub.net/video/677352/donkey-kick) — marcado domínio público, mas o aviso preserva direitos de imagem e proíbe implicar endosso. Não usar automaticamente.
+- [DVIDS: One Minute Glute Bridge Challenge](https://www.dvidshub.net/video/757660/one-minute-glute-bridge-challenge) — contém partes com restrição de distribuição. Não importar.
+
+Cada candidato está registrado em `data/fontes_de_video.json` com `allowed_for_render:false`. Nenhum arquivo foi baixado ou distribuído. A escolha final requer revisão de técnica e direitos; possuir licença de uso não significa que a postura do exercício esteja correta.
