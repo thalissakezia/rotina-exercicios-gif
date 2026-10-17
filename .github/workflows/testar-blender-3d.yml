@@ -60,6 +60,15 @@ jobs:
             --out work_private/review/smoke-preview.gif \
             --contact-sheet work_private/review/smoke-contact-sheet.png --test-only
           python scripts/test_review_gate.py
+      - name: Disponibilizar APENAS demonstracao sintetica para inspecao
+        uses: actions/upload-artifact@v4
+        with:
+          name: demonstracao-blender-sintetica-nao-validada
+          path: |
+            work_private/review/smoke-preview.gif
+            work_private/review/smoke-contact-sheet.png
+          retention-days: 3
+          if-no-files-found: error
       - name: Não publicar dados corporais, vídeos ou imagens de teste
         run: |
           test -f work_private/rig/smoke-test.blend
@@ -67,4 +76,4 @@ jobs:
           test -f work_private/frames/blender_smoke_0004.png
           test -f work_private/review/smoke-preview.gif
           test -f work_private/review/smoke-contact-sheet.png
-          echo "BLENDER_SMOKE_TEST_PASS - synthetic test files will be discarded with the runner"
+          echo "BLENDER_SMOKE_TEST_PASS - only synthetic preview artifact available 3 days; raw data discarded"
